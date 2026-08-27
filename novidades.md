@@ -12,6 +12,20 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Atualizações automáticas pelo painel do WordPress
+**v1.73.0 · agosto de 2026**
+
+O V3REvent passa a se **atualizar como qualquer outro plugin do seu site**: uma nova versão aparece na tela de **Plugins** do WordPress, com o aviso de atualização de sempre — sem precisar que alguém envie o arquivo por FTP ou peça para a equipe da V3RTECH publicar manualmente.
+
+Junto com isso, o plugin passa a **reconhecer a licença de uso** da V3RTECH, com uma tela própria para isso: a aba **Licença**, em **Configurações** (ao lado de Organização, E-mails, Aparência, Avançado e Administradores). Nela você vê o estado atual da licença (chave mascarada, validade, ativações usadas e a última verificação), ativa uma chave nova, e — com a licença já ativa — verifica o status a qualquer momento, desativa ou troca de chave.
+
+Duas coisas importantes:
+
+- **Licença vencida não desliga o plugin.** O que a licença cobre é o direito a receber atualizações e correções — com ela vencida, o V3REvent continua funcionando **normalmente e por inteiro**; só as atualizações automáticas param, até a licença ser renovada. É a própria tela quem avisa disso, logo no topo.
+- **Nada do que já existe muda de lugar ou de comportamento.** Se você não usa licenciamento, não precisa fazer nada.
+
+---
+
 ## Relatório do evento reformulado: indicadores legíveis e descrição sob controle
 **v1.71.0 · agosto de 2026**
 
