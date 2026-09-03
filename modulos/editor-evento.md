@@ -122,6 +122,7 @@ Nela você:
 
 ![Menu de troca de status aberto na etiqueta de uma inscrição](/assets/screenshots/evento-editor-inscritos-status.png)
 
+- **Reenvia a confirmação de inscrição** por e-mail, individualmente ou em lote (com o mesmo envio gradual e a mesma nova tentativa automática da tela geral) — veja os detalhes em **[Inscrições → Reenviar a confirmação de inscrição](/modulos/inscricoes/#reenviar-a-confirmação-de-inscrição)**;
 - **Exporta** a lista do evento em **CSV**, **XLSX** ou **PDF**, pelos botões acima da tabela.
 
 {: .note }

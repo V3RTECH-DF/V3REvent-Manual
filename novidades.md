@@ -12,6 +12,41 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Envio de e-mail em massa sem limite, com nova tentativa automática
+**v1.77.0 · setembro de 2026**
+
+O reenvio "para todos os que correspondem ao filtro" deixou de ter um teto de alcance — antes, um filtro com mais de mil participantes deixava o excedente inalcançável, mesmo repetindo a operação. Agora o envio chega a todos, em qualquer volume, só que de forma **gradual**: em lotes de 100 mensagens a cada 5 minutos, para não sobrecarregar o servidor de e-mail do site. Antes de confirmar um envio grande, a tela avisa que ele será gradual e estima quanto tempo leva; enquanto ele roda, um aviso mostra quantos lotes ainda faltam — para você não achar que travou e mandar de novo.
+
+Além disso, uma indisponibilidade passageira no envio de e-mail (servidor fora do ar por instantes, limite de taxa, caixa cheia) deixa de derrubar o envio de vez: o V3REvent **tenta de novo sozinho**, até três vezes, com intervalo crescente — com o participante marcado como **"Em nova tentativa"** enquanto isso acontece. E-mail ausente ou claramente inválido não entra nessa recuperação automática, porque nesse caso o problema é o dado, não o envio. Veja **[Inscrições → Reenviar a confirmação de inscrição](/modulos/inscricoes/#reenviar-a-confirmação-de-inscrição)**.
+
+## Sugestão de correção de e-mail no formulário público
+**v1.76.0 · setembro de 2026**
+
+Quando alguém digita um domínio quase certo no formulário de inscrição — `gmail.con`, `hotmial.com`, `outlok.com` — aparece uma sugestão gentil logo abaixo do campo, com um clique para corrigir. **Nunca bloqueia**: quem tem um domínio próprio ou incomum, ou simplesmente prefere ignorar, segue normalmente com o que digitou. Vale para o e-mail do responsável e para qualquer campo de e-mail que você tenha configurado no evento. Veja **[Formulário público → Sugestão de correção de e-mail](/modulos/formulario-publico/#sugestão-de-correção-de-e-mail)**.
+
+De quebra, o e-mail gravado passou a ter espaços removidos e letras uniformizadas em minúsculas — sem isso, "Nome@Gmail.com" e "nome@gmail.com" podiam ser tratados como pessoas diferentes por quem consultasse esse dado depois.
+
+## Lista de inscritos pronta para eventos grandes
+**v1.75.0 · setembro de 2026**
+
+A lista de **Inscrições** ganhou um seletor de **itens por página** — 20, 50, 100 ou Todos —, com a escolha salva para as próximas vezes, do mesmo jeito que já acontecia com as colunas. Em "Todos", passando de mil participantes a tela avisa que está mostrando só uma parte, para ninguém achar que viu a lista inteira.
+
+O reenvio em lote de confirmação, lançado na versão anterior, ganhou a opção de **"selecionar todos os participantes deste filtro"** — antes, marcar "todos" só alcançava a página aberta (20 de cada vez); num evento com centenas de inscritos, reenviar para todo mundo exigia repetir a operação várias vezes. Veja **[Inscrições → Itens por página](/modulos/inscricoes/#itens-por-página)**.
+
+## Reenvio da confirmação de inscrição, individual e em lote
+**v1.74.0 · setembro de 2026**
+
+Até aqui, quando um inscrito dizia não ter recebido o e-mail de confirmação, não havia nada a fazer além de orientá-lo a checar o spam. Agora cada participante da lista de **Inscrições** (nos dois painéis — `wp-admin` e o painel publicado no site) tem um botão **Reenviar confirmação**, com seleção múltipla para reenviar a vários de uma vez e uma confirmação prévia dizendo quantas pessoas vão receber.
+
+Só participante de inscrição **confirmada** recebe reenvio — pendente ou cancelada fica com o botão desabilitado, para não confirmar ou cobrar de quem não deveria. Numa inscrição individual, o recibo acompanha o reenvio; numa inscrição em grupo, só a confirmação é reenviada — o recibo tem o valor total e os dados de quem pagou, e é assunto só do responsável. Cada reenvio fica registrado (quantas vezes e quando foi o último), visível na própria linha. Veja **[Inscrições → Reenviar a confirmação de inscrição](/modulos/inscricoes/#reenviar-a-confirmação-de-inscrição)**.
+
+## E-mail do participante, visível na lista sem precisar configurar nada
+**v1.74.0 · setembro de 2026**
+
+A lista de **Inscrições** passou a trazer, por padrão, uma coluna com o **e-mail do participante** — antes só aparecia o e-mail de quem fez a inscrição, e conferir se um participante específico tinha digitado o e-mail certo exigia abrir o pedido no WooCommerce. Continua funcionando em evento cujo campo de e-mail tenha outro nome, e fica vazia (sem quebrar nada) em evento sem campo de e-mail. Quem já tinha escolhido suas próprias colunas não teve nada alterado. Veja **[Inscrições → Colunas visíveis](/modulos/inscricoes/#colunas-visíveis)**.
+
+---
+
 ## Atualizações automáticas pelo painel do WordPress
 **v1.73.0 · agosto de 2026**
 

@@ -134,6 +134,16 @@ ao fim do anterior, e o editor avisa quando percebe um buraco ou uma sobreposiç
 Veja **[Editor de evento → Preço por lote](/modulos/editor-evento/#preço-por-lote-data)**.
 </details>
 
+<details markdown="1">
+<summary>O formulário sugeriu corrigir o e-mail de um participante com domínio próprio (empresa, universidade). Isso vai impedir a inscrição?</summary>
+
+Não. A sugestão de correção de e-mail é só um alerta — a pessoa pode ignorá-la e
+seguir com o que digitou, mesmo que o domínio seja incomum ou pouco usado. O
+formulário nunca recusa a inscrição por causa dela; só a validação normal de
+formato de e-mail continua valendo. Veja
+**[Formulário público → Sugestão de correção de e-mail](/modulos/formulario-publico/#sugestão-de-correção-de-e-mail)**.
+</details>
+
 ## Pagamento e documentos
 
 <details markdown="1">
@@ -171,6 +181,27 @@ Sim. Ao concluir o pedido, cada participante recebe um e-mail de confirmação c
 seu **código de inscrição** único, e o responsável recebe um relatório e o
 **recibo em PDF**. Se você habilitar, a **credencial** também é enviada
 automaticamente.
+</details>
+
+<details markdown="1">
+<summary>Um participante diz que não recebeu o e-mail de confirmação. O que eu faço?</summary>
+
+Peça para conferir a caixa de spam primeiro. Não achando, vá em **Inscrições**,
+encontre o participante e clique em **Reenviar confirmação** — funciona para
+qualquer inscrição já **confirmada**. Se a linha mostrar a etiqueta **"Em nova
+tentativa"**, não reenvie: o próprio sistema já está tentando de novo sozinho, e o
+botão fica temporariamente desabilitado por causa disso. Veja
+**[Inscrições → Reenviar a confirmação de inscrição](/modulos/inscricoes/#reenviar-a-confirmação-de-inscrição)**.
+</details>
+
+<details markdown="1">
+<summary>Reenviei a confirmação para várias pessoas e a tela avisou que o envio seria "gradual". Travou?</summary>
+
+Não. Em envios grandes, o V3REvent manda as mensagens aos poucos (por padrão, 100 a
+cada 5 minutos) para não sobrecarregar o servidor de e-mail do site — a própria
+tela mostra quantos lotes ainda faltam enquanto isso roda. É esperado que um envio
+para centenas de pessoas leve alguns minutos ou mais; a confirmação, antes de você
+disparar, já avisa a duração estimada.
 </details>
 
 ## Credencial e check-in

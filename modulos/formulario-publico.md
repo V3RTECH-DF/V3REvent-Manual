@@ -57,6 +57,20 @@ Cada evento define um **[Tipo de inscrição](/modulos/editor-evento/)** que con
 {: .tip }
 > **Tem um cupom de desconto?** No carrinho ou no checkout, o participante pode inserir o código no campo de cupom e o desconto é abatido do total. Veja como criar e restringir cupons em **[Descontos com cupom](/guia-do-gestor/descontos-com-cupom/)**.
 
+## Sugestão de correção de e-mail
+
+Todo campo de e-mail do formulário — o do responsável e qualquer campo de e-mail que você tenha configurado no evento — confere o domínio digitado e, se ele for parecido demais com um domínio comum (`gmail.com`, `hotmail.com`, `outlook.com`, `yahoo.com`...), sugere a correção logo abaixo do campo.
+
+![Campo de e-mail com a sugestão "Você quis dizer ana.ribeiro@gmail.com?" abaixo do valor digitado](/assets/screenshots/form-publico-sugestao-email.png)
+
+Um clique no e-mail sugerido substitui o valor digitado. Quem prefere ignorar simplesmente continua digitando ou segue para o próximo campo — nada trava.
+
+{: .important }
+> **É só uma sugestão — nunca um bloqueio.** A pessoa pode prosseguir com a inscrição mesmo ignorando o aviso — por exemplo, se o e-mail for de um domínio próprio pouco comum (empresa, universidade, órgão público) e a sugestão simplesmente não se aplicar. O formulário nunca recusa a inscrição por causa dela; só a validação normal de formato de e-mail continua valendo.
+
+{: .tip }
+> **Por que isto importa.** Boa parte de "não recebi o e-mail de confirmação" é, na origem, um e-mail digitado errado — um domínio trocado por engano é fácil de não perceber na hora. A sugestão pega o erro mais comum **antes** de a pessoa terminar a inscrição, evitando o retrabalho de descobrir depois (a essa altura, já com a inscrição paga) que o e-mail cadastrado está incorreto.
+
 ## Importar participantes por planilha
 
 Em vez de digitar um a um, o responsável pode **importar uma planilha**:
