@@ -393,10 +393,17 @@ Configura o **crachá** de cada participante confirmado:
 
 ![Aba Credencial do editor de evento](/assets/screenshots/evento-editor-credencial.png)
 
+- **Oferecer credencial para este evento** (liga/desliga, desde a v1.79.0) — no mesmo formato do controle de emissão do certificado, logo abaixo;
 - **Modelo** (entre os disponíveis), com a logo e as cores do evento;
 - **Envio automático** por e-mail a cada inscrito (opcional);
 - **QR e networking**: por padrão, o QR carrega o código de validação; com o consentimento de networking do inscrito, carrega um cartão de contato (vCard) — você mapeia quais campos entram no vCard;
 - Texto do **consentimento** de networking.
+
+{: .note }
+> **Nasce ligado.** Em todo evento — os que já existiam antes da v1.79.0 e os novos — a credencial começa habilitada, para que nenhuma atualização tire a credencial de quem já estava usando. Desligar é uma escolha explícita, não um padrão.
+
+{: .important }
+> **Desligar "Oferecer credencial" tira a credencial do ar por completo**, não só do painel: ela some da **[Área do Inscrito](/modulos/area-do-inscrito/)**, o link público da credencial para de funcionar, e ela deixa de sair anexada no e-mail de confirmação. Use para eventos que simplesmente não têm crachá (uma palestra única, por exemplo) — não para "esconder temporariamente", porque quem já tinha o link salvo passa a ver que ela não está disponível.
 
 Veja **[Documentos](/modulos/documentos/)** para como a credencial fica e a geração em lote.
 

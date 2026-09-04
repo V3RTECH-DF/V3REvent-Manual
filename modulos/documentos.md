@@ -8,6 +8,9 @@ nav_order: 10
 
 O V3REvent gera documentos automáticos a partir de um evento: o **recibo** (para o pagador), a **credencial** (para cada participante) e o **certificado de participação** (para quem é elegível). Todos usam a identidade do evento e os dados da organização, e têm um **link público por código** — imprimível e com versão em PDF.
 
+{: .tip }
+> **Quem perdeu o link de um documento não precisa pedir para você reenviar.** Desde a v1.79.0, a **[Área do Inscrito](/modulos/area-do-inscrito/)** deixa qualquer inscrito reencontrar sozinho, a partir do e-mail usado na inscrição, o comprovante (se for o responsável pela inscrição), a credencial e o certificado.
+
 ## Recibo
 
 Ao concluir o pedido, o **responsável (pagador)** recebe por e-mail um **recibo em PDF** com:
@@ -42,6 +45,9 @@ Cada participante confirmado tem uma **credencial** (crachá) com a logo e as co
 
 {: .note }
 > O QR da credencial é o que liga o participante ao **[Check-in](/modulos/checkin/)**. Mesmo quando o QR carrega o vCard de networking, o código de inscrição continua embutido — então a leitura no credenciamento funciona igual.
+
+{: .note }
+> Nem todo evento precisa de credencial. Na aba **[Credencial](/modulos/editor-evento/)** do editor há um controle **Oferecer credencial para este evento** — desligado, ela deixa de existir por completo para aquele evento: some da Área do Inscrito, o link público para de responder e ela não sai mais anexada no e-mail. Nasce ligado em todo evento.
 
 ## Certificado de participação
 

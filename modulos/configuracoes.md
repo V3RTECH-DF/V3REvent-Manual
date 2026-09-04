@@ -33,6 +33,9 @@ Os templates da comunicação automática.
 
 Os templates aceitam **variáveis** (como o nome do evento, o nome do participante e o **código de inscrição**), exibidas como dica na própria tela. Cada evento pode sobrescrever esses textos.
 
+{: .note }
+> Desde a v1.79.0, a lista de templates inclui também o **e-mail de acesso à Área do Inscrito** (o link enviado a quem pede para reencontrar as próprias inscrições) — editável do mesmo jeito que os demais.
+
 ## Aparência
 
 As cores e a fonte **padrão** que os novos eventos herdam (e que cada evento pode sobrepor na sua aba Aparência).

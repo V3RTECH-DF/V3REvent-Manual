@@ -61,6 +61,7 @@ A maioria aceita o atributo **`id`** — o **número do evento** (ex.: `[v3reven
 | `[v3revent_share]` | Os **botões de compartilhamento** do evento nas redes. | Ao fim da página do evento: `[v3revent_share]` |
 | `[v3revent_events]` | Uma **lista de eventos publicados**, em cartões ou em tabela, com filtros de situação, modalidade e período, e paginação. | Numa página "Todos os eventos": `[v3revent_events]` — atributos e receitas prontas em **[Listagem de eventos](/modulos/listagem-de-eventos/)** |
 | `[v3revent_gestao]` | O **painel de gestão** do V3REvent (Painel, Eventos, Inscrições, Check-in, Relatórios) direto numa página do site, sem entrar no `wp-admin`. | Numa página "Gestão de eventos": `[v3revent_gestao]` |
+| `[v3revent_area_inscrito]` | A **Área do Inscrito** — onde qualquer pessoa já inscrita informa o e-mail e reencontra sozinha comprovante, credencial e certificado. | Numa página própria: `[v3revent_area_inscrito]` |
 
 {: .note }
 > A lista na tela é a **fonte viva** — ela reflete exatamente os shortcodes que o plugin oferece na sua versão. Se um shortcode novo for adicionado, ele aparece ali automaticamente, com o botão Copiar. O `[v3revent_registration]` também aceita `event_id` no lugar de `id` (compatibilidade), mas o padrão é **`id`**.
@@ -72,6 +73,9 @@ A maioria aceita o atributo **`id`** — o **número do evento** (ex.: `[v3reven
 > **`[v3revent_gestao]` é diferente dos outros — não é conteúdo, é acesso.**
 >
 > Só quem **já tem papel em algum evento** (Administrador da Organização, Coordenador de Eventos ou Equipe de Evento) vê a gestão de verdade; quem não tem papel nenhum vê apenas um aviso, e nada do plugin chega a carregar. **Configurações da organização** continua **exclusiva do `wp-admin`** — essa aba não aparece na página de gestão. O V3REvent marca a página como **não indexável** para buscadores, e ela **não entra em nenhum menu** automaticamente — evite colocá-la no menu público do site; trate o link como o do `wp-admin`. Passo a passo de montagem, o que cada papel vê e a tabela de erros: **[Gestão pelo site](/modulos/gestao-pelo-site/)**.
+
+{: .note }
+> **`[v3revent_area_inscrito]` também é diferente — é o único que já vem pronto sem você fazer nada.** A página **Área do inscrito** é criada automaticamente na atualização para a v1.79.0; o shortcode existe só para quem quiser montá-la em outro endereço ou com outro visual. Ela também é **não indexável** para buscadores, pelo mesmo motivo da gestão: lida com dado pessoal. Veja **[Área do Inscrito](/modulos/area-do-inscrito/)**.
 
 ## Dúvidas frequentes (integração)
 

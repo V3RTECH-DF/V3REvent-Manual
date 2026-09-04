@@ -48,6 +48,7 @@ Este manual tem dois objetivos: **ensinar você a operar o plugin** e **mostrar 
 - **Importação por planilha** — em vez de digitar participante por participante, importe uma planilha CSV/XLSX e o formulário se preenche sozinho.
 - **Pagamento sem fricção** — reutiliza o carrinho, o checkout e os meios de pagamento do WooCommerce que você já usa.
 - **Comunicação automática** — cada participante recebe um e-mail de confirmação com seu código de inscrição; o responsável recebe um relatório e um **recibo em PDF**.
+- **Área do Inscrito** — uma página pública onde qualquer inscrito reencontra sozinho, pelo e-mail, o comprovante, a credencial e o certificado, sem precisar pedir nada à organização.
 - **Credencial com QR e check-in** — emita crachás com a identidade do evento e faça o **credenciamento por leitura de QR** no dia, marcando presença em segundos.
 - **Certificado de participação** — emita certificados aos elegíveis (por check-in ou inscrição confirmada), com modelo, carga horária e link público de verificação.
 - **Avaliação do evento** — pesquisa anônima respondida pelos presentes (com NPS) e a sua retrospectiva de lições aprendidas.

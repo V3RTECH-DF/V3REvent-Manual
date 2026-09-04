@@ -12,6 +12,20 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Área do Inscrito: quem se inscreveu reencontra tudo sozinho
+**v1.79.0 · setembro de 2026**
+
+Antes, quem perdia o e-mail de confirmação só tinha um caminho: escrever para a organização e esperar. Agora existe a **Área do Inscrito**, uma página pública criada automaticamente no seu site: a pessoa informa o e-mail, recebe um link de acesso e vê ali suas inscrições — com comprovante, credencial e certificado, cada um só quando já disponível.
+
+O que aparece depende de como a pessoa participou: quem **fez a inscrição** (inclusive de um grupo inteiro) vê o comprovante e a credencial/certificado de todos os participantes; quem **só participa** de um grupo comprado por outra pessoa vê apenas a própria credencial e o próprio certificado — nunca os colegas nem o valor pago. Por segurança, a página sempre responde a mesma coisa, exista ou não o e-mail na base, e o link vale 24 horas e serve uma vez só. Veja **[Área do Inscrito](/modulos/area-do-inscrito/)**.
+
+## Controle para oferecer ou não credencial por evento
+**v1.79.0 · setembro de 2026**
+
+A aba **Credencial** do editor de evento ganhou um controle **Oferecer credencial para este evento**, no mesmo formato do controle de emissão do certificado. Desligado, a credencial deixa de existir por completo para aquele evento: some da Área do Inscrito, o link público para de responder e ela não sai mais anexada no e-mail. **Nasce ligado** em todo evento — os que já existiam e os novos — então nada muda para quem não mexer. Veja **[Editor de evento → Credencial](/modulos/editor-evento/#credencial)**.
+
+---
+
 ## Envio de e-mail em massa sem limite, com nova tentativa automática
 **v1.77.0 · setembro de 2026**
 

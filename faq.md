@@ -186,11 +186,14 @@ automaticamente.
 <details markdown="1">
 <summary>Um participante diz que não recebeu o e-mail de confirmação. O que eu faço?</summary>
 
-Peça para conferir a caixa de spam primeiro. Não achando, vá em **Inscrições**,
-encontre o participante e clique em **Reenviar confirmação** — funciona para
-qualquer inscrição já **confirmada**. Se a linha mostrar a etiqueta **"Em nova
-tentativa"**, não reenvie: o próprio sistema já está tentando de novo sozinho, e o
-botão fica temporariamente desabilitado por causa disso. Veja
+A partir da v1.79.0, a primeira resposta é indicar a **[Área do
+Inscrito](/modulos/area-do-inscrito/)**: a pessoa informa lá o e-mail usado na
+inscrição e recebe sozinha um link de acesso, sem depender de você. Se preferir
+resolver você mesmo, peça para conferir a caixa de spam primeiro; não achando, vá
+em **Inscrições**, encontre o participante e clique em **Reenviar confirmação** —
+funciona para qualquer inscrição já **confirmada**. Se a linha mostrar a etiqueta
+**"Em nova tentativa"**, não reenvie: o próprio sistema já está tentando de novo
+sozinho, e o botão fica temporariamente desabilitado por causa disso. Veja
 **[Inscrições → Reenviar a confirmação de inscrição](/modulos/inscricoes/#reenviar-a-confirmação-de-inscrição)**.
 </details>
 
@@ -202,6 +205,53 @@ cada 5 minutos) para não sobrecarregar o servidor de e-mail do site — a próp
 tela mostra quantos lotes ainda faltam enquanto isso roda. É esperado que um envio
 para centenas de pessoas leve alguns minutos ou mais; a confirmação, antes de você
 disparar, já avisa a duração estimada.
+</details>
+
+## Área do Inscrito
+
+<details markdown="1">
+<summary>Um participante pediu o link de acesso e disse que "não chegou nada" — mas eu vejo o e-mail dele cadastrado. O que houve?</summary>
+
+Confira se o e-mail digitado na Área do Inscrito é **exatamente** o mesmo usado na
+inscrição. A tela responde a mesma mensagem de sucesso tanto para e-mail
+cadastrado quanto para não cadastrado — de propósito, para que a página não vire
+um jeito de descobrir quem está inscrito no seu evento — então "recebi a mensagem
+e nada chegou" quase sempre significa e-mail diferente, não falha de envio. Peça
+para a pessoa conferir com quem fez a inscrição dela (às vezes é outra pessoa, o
+responsável do grupo) e tentar de novo. Veja **[Área do
+Inscrito](/modulos/area-do-inscrito/)**.
+</details>
+
+<details markdown="1">
+<summary>Por que a Área do Inscrito não mostra os colegas de um participante, só o dele?</summary>
+
+Depende de quem é o dono do e-mail usado para acessar. Quem **fez a inscrição**
+(pagou, inclusive de um grupo inteiro) vê o comprovante e a credencial/certificado
+de **todos** os participantes daquele pedido. Quem **só participa** — foi incluído
+num grupo que outra pessoa comprou — vê **apenas a própria** credencial e
+certificado, nunca os colegas, o comprovante ou o **código da inscrição** (é a
+chave que abre o comprovante, então some junto). Não é uma limitação a corrigir:
+é para que o valor pago e os dados dos colegas não fiquem visíveis a quem não
+pagou. Veja **[Área do Inscrito](/modulos/area-do-inscrito/)**.
+</details>
+
+<details markdown="1">
+<summary>O link de acesso enviado por e-mail expirou. O participante perdeu o acesso?</summary>
+
+Não — ele só precisa pedir um novo, na mesma página. O link vale **24 horas** e
+serve **uma única vez**; passado esse prazo (ou depois de aberto), a própria tela
+mostra o aviso e já traz o campo para solicitar outro. Veja **[Área do
+Inscrito](/modulos/area-do-inscrito/)**.
+</details>
+
+<details markdown="1">
+<summary>Preciso criar a página da Área do Inscrito?</summary>
+
+Não. Ela é criada automaticamente na atualização para a v1.79.0 — procure por
+"Área do inscrito" em **Páginas**. Só use o shortcode `[v3revent_area_inscrito]`
+se quiser montá-la em outro endereço ou com outro visual. Vale divulgar o link no
+rodapé dos e-mails e no site: a página só ajuda quem sabe que ela existe. Veja
+**[Área do Inscrito](/modulos/area-do-inscrito/)**.
 </details>
 
 ## Credencial e check-in
@@ -223,6 +273,17 @@ Pela tela **Check-in** (leitor de QR por câmera ou entrada manual do código) o
 abrindo a credencial pelo celular, onde a equipe logada vê um botão de **Confirmar
 presença**. O check-in é reversível e não duplica presença. Quem faz é a **Equipe
 de Evento**. Veja **[Check-in](/modulos/checkin/)**.
+</details>
+
+<details markdown="1">
+<summary>Meu evento não precisa de crachá. Dá para desligar a credencial?</summary>
+
+Sim, desde a v1.79.0. Na aba **Credencial** do editor de evento, desligue
+**Oferecer credencial para este evento** — ela deixa de existir por completo para
+aquele evento: some da Área do Inscrito, o link público para de responder e ela
+não sai mais anexada no e-mail. Todo evento nasce com o controle **ligado**, então
+nada muda se você não mexer. Veja **[Editor de evento →
+Credencial](/modulos/editor-evento/#credencial)**.
 </details>
 
 <details markdown="1">
