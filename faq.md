@@ -229,8 +229,9 @@ Depende de quem é o dono do e-mail usado para acessar. Quem **fez a inscrição
 (pagou, inclusive de um grupo inteiro) vê o comprovante e a credencial/certificado
 de **todos** os participantes daquele pedido. Quem **só participa** — foi incluído
 num grupo que outra pessoa comprou — vê **apenas a própria** credencial e
-certificado, nunca os colegas, o comprovante ou o **código da inscrição** (é a
-chave que abre o comprovante, então some junto). Não é uma limitação a corrigir:
+certificado, nunca os colegas, o comprovante ou o **código da inscrição** — o
+código some junto porque é ele que abre o comprovante para quem o tem em mãos.
+Não é uma limitação a corrigir:
 é para que o valor pago e os dados dos colegas não fiquem visíveis a quem não
 pagou. Veja **[Área do Inscrito](/modulos/area-do-inscrito/)**.
 </details>

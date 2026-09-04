@@ -12,6 +12,18 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Correção de privacidade na Área do Inscrito
+**v1.79.2 · setembro de 2026**
+
+Quem só participava de um grupo comprado por outra pessoa não via o botão do comprovante — como deve ser, já que ele traz o nome de quem pagou e o valor. Mas a tela mostrava o **código da inscrição** logo ao lado, e esse código é justamente o que abre o comprovante pelo endereço público. Na prática, a regra existia e a própria página entregava o caminho para contorná-la.
+
+Agora o código aparece só para quem fez a inscrição, exatamente como o botão. Quem fez a inscrição continua vendo o código mesmo antes do pagamento ser confirmado — é o número que ele usa para falar com você. **Nenhuma ação é necessária da sua parte**; quem já tinha a versão anterior instalada passa a se comportar assim ao atualizar.
+
+## O shortcode da Área do Inscrito na lista de shortcodes
+**v1.79.1 · setembro de 2026**
+
+A Área do Inscrito nasceu funcionando, mas o shortcode dela não aparecia em **Shortcodes e API** — e essa lista é onde você descobre o que pode colar numa página. Agora `[v3revent_area_inscrito]` está lá, com a explicação de que a página já é criada sozinha e de que o shortcode serve só para montá-la em outro endereço. Veja **[Shortcodes e API](/modulos/shortcodes-e-api/)**.
+
 ## Área do Inscrito: quem se inscreveu reencontra tudo sozinho
 **v1.79.0 · setembro de 2026**
 
@@ -23,6 +35,9 @@ O que aparece depende de como a pessoa participou: quem **fez a inscrição** (i
 **v1.79.0 · setembro de 2026**
 
 A aba **Credencial** do editor de evento ganhou um controle **Oferecer credencial para este evento**, no mesmo formato do controle de emissão do certificado. Desligado, a credencial deixa de existir por completo para aquele evento: some da Área do Inscrito, o link público para de responder e ela não sai mais anexada no e-mail. **Nasce ligado** em todo evento — os que já existiam e os novos — então nada muda para quem não mexer. Veja **[Editor de evento → Credencial](/modulos/editor-evento/#credencial)**.
+
+{: .note }
+> **v1.80.0** saiu sem novidades para você: foi uma mudança interna, em que a sugestão de correção de e-mail passou a vir da biblioteca compartilhada dos plugins da V3RTECH, em vez de uma cópia própria do V3REvent. O comportamento na tela é o mesmo.
 
 ---
 

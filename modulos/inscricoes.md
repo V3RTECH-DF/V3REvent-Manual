@@ -39,9 +39,6 @@ Há também um **link para o pedido no WooCommerce**, para conferir o pagamento 
 
 ![Seletor de colunas aberto, com a opção "E-mail do participante", e o seletor de itens por página ao lado](/assets/screenshots/inscricoes-colunas-itens-pagina.png)
 
-{: .note }
-> *Print pendente desta tela (barra com o botão Colunas e o seletor de itens por página) — depende de sessão autenticada no painel. Será acrescentado após a captura.*
-
 O botão **Colunas**, acima da tabela, abre a lista de colunas disponíveis — incluindo qualquer **campo do formulário** que o evento tenha (por exemplo, Modalidade ou Organização) — para você marcar as que quer ver. A escolha fica **salva por usuário**: da próxima vez que você abrir a tela, continua do jeito que deixou.
 
 Por padrão, a lista já traz o **e-mail do participante** ao lado do e-mail do responsável — antes só o e-mail de quem fez a inscrição aparecia, e conferir se um participante específico digitou o e-mail certo exigia abrir o pedido. Se o seu evento tiver um campo de e-mail com outro nome (ou nenhum), a coluna simplesmente fica vazia para aquele evento, sem quebrar nada.
@@ -70,14 +67,11 @@ Acima da tabela, escolha quantos participantes aparecem por página: **20, 50, 1
 
 Quando um participante diz que não recebeu o e-mail de confirmação — foi para o spam, digitou o e-mail errado e já corrigiu, ou simplesmente sumiu —, você reenvia direto da lista, sem precisar pedir para a pessoa se inscrever de novo.
 
-{: .note }
-> *Print pendente desta tela — depende de sessão autenticada no painel. Será acrescentado após a captura.*
-
 ### Reenvio individual
 
-![Lista de inscritos com o botão "Reenviar confirmação" em cada linha e a barra de ação em lote com participantes selecionados](/assets/screenshots/inscricoes-reenvio.png)
+![Lista de inscritos com o ícone de reenvio em cada linha e a barra de ação em lote com participantes selecionados](/assets/screenshots/inscricoes-reenvio.png)
 
-Na coluna de ações de cada participante, clique em **Reenviar confirmação**. O envio é imediato: a tela mostra na hora se foi enviado ou recusado.
+Na coluna de ações de cada participante, clique no **ícone de envelope**. Passe o mouse sobre ele para confirmar que é o reenvio antes de clicar. O envio é imediato: a tela mostra na hora se foi enviado ou recusado.
 
 Nem toda linha pode receber reenvio:
 

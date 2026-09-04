@@ -33,7 +33,7 @@ Com a Área do Inscrito, a pessoa resolve isso sozinha, a qualquer hora, sem dep
 O que aparece depende de **como ela participou** daquela inscrição — o sistema reconhece dois papéis possíveis para o mesmo e-mail, e nunca mistura os dois:
 
 - **Quem fez a inscrição (o responsável/pagador)** — inclusive quando inscreveu um grupo inteiro num único pedido — vê **o comprovante do pagamento** e a **credencial e o certificado de todos os participantes daquele pedido**, os dela e os dos colegas.
-- **Quem só participa** — foi incluído num grupo que outra pessoa comprou e pagou — vê **apenas a própria credencial e o próprio certificado**. Não vê os colegas de grupo, nem o comprovante, **nem o código da inscrição** (é a chave da rota pública do comprovante, então também fica de fora — só aparece para quem tem o gate de responsável).
+- **Quem só participa** — foi incluído num grupo que outra pessoa comprou e pagou — vê **apenas a própria credencial e o próprio certificado**. Não vê os colegas de grupo, nem o comprovante, **nem o código da inscrição** — o código some junto porque é ele que abre o comprovante para quem o tem em mãos.
 
 ![Área do inscrito para quem fez a inscrição de um grupo — vê o comprovante e a credencial de todos os participantes](/assets/screenshots/area-inscrito-responsavel-grupo.png)
 
@@ -82,4 +82,4 @@ Quem gerencia o evento **não vê nem monta nada** a partir desta tela — ela n
 
 - A página é marcada como **não indexável** para buscadores (ela lida com dado pessoal, então não deve aparecer em busca).
 - Um pedido de exclusão de dados (LGPD) apaga também os links de acesso daquele e-mail, mesmo que a pessoa nunca tenha se inscrito em nada.
-- Assunto e corpo do e-mail de acesso são editáveis, do mesmo jeito que os demais e-mails automáticos do plugin — veja **[Configurações → E-mails](/modulos/configuracoes/)**.
+- O e-mail de acesso sai com um texto pronto; diferente dos demais e-mails automáticos do plugin, ele **ainda não pode ser personalizado** por você — veja **[Configurações → E-mails](/modulos/configuracoes/)**.

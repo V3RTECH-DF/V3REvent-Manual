@@ -34,7 +34,7 @@ Os templates da comunicação automática.
 Os templates aceitam **variáveis** (como o nome do evento, o nome do participante e o **código de inscrição**), exibidas como dica na própria tela. Cada evento pode sobrescrever esses textos.
 
 {: .note }
-> Desde a v1.79.0, a lista de templates inclui também o **e-mail de acesso à Área do Inscrito** (o link enviado a quem pede para reencontrar as próprias inscrições) — editável do mesmo jeito que os demais.
+> O **e-mail de acesso à Área do Inscrito** (o link enviado a quem pede para reencontrar as próprias inscrições) já sai com um texto pronto, mas **ainda não aparece nesta lista para você editar** — ao contrário dos dois templates acima. Se quiser um texto diferente do padrão, fale com o suporte.
 
 ## Aparência
 
