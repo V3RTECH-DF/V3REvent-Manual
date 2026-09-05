@@ -71,7 +71,12 @@ Quando um participante diz que não recebeu o e-mail de confirmação — foi pa
 
 ![Lista de inscritos com o ícone de reenvio em cada linha e a barra de ação em lote com participantes selecionados](/assets/screenshots/inscricoes-reenvio.png)
 
-Na coluna de ações de cada participante, clique no **ícone de envelope**. Passe o mouse sobre ele para confirmar que é o reenvio antes de clicar. O envio é imediato: a tela mostra na hora se foi enviado ou recusado.
+Na coluna **Ações** de cada participante há dois ícones: um **envelope** (reenviar a confirmação) e, ao lado, um **ícone de link externo** que abre o pedido no WooCommerce. Passe o mouse sobre qualquer um dos dois para ver o que ele faz antes de clicar — é assim que você confere, sem precisar clicar, qual é o pedido (o número aparece só na dica ao passar o mouse) e se aquele participante já foi reenviado antes.
+
+{: .tip }
+> **Em celular não há mouse, então esse hover não existe** — o número do pedido e o histórico de reenvios só aparecem em **desktop**. É uma escolha deliberada, não uma falha: no celular, toque no ícone de link para abrir o pedido diretamente.
+
+Clique no envelope para reenviar. O envio é imediato: a tela mostra na hora se foi enviado ou recusado.
 
 Nem toda linha pode receber reenvio:
 
@@ -81,7 +86,7 @@ Nem toda linha pode receber reenvio:
 {: .note }
 > **O recibo só acompanha quando o participante é quem pagou.** Numa inscrição individual, reenviar a confirmação reenvia também o recibo, porque a mesma pessoa é participante e responsável. Numa inscrição em grupo (uma empresa ou escola inscrevendo várias pessoas), reenviar para um participante manda **só a confirmação dele** — o recibo tem o valor total do pedido e os dados de quem pagou, e não deveria ir para cada participante do grupo. Quem precisa do recibo é sempre o responsável, que já o recebeu por e-mail e pode reemitir pelo link permanente (veja **[Documentos](/modulos/documentos/)**).
 
-Já reenviado antes? Abaixo do botão aparece **"Reenviado Nx • último em [data]"** — assim você não manda cinco cópias porque três pessoas já pediram a mesma coisa.
+Já reenviado antes? Passe o mouse sobre o envelope: a dica mostra **"Reenviado Nx, último em [data]"** — assim você não manda cinco cópias porque três pessoas já pediram a mesma coisa.
 
 ### Reenvio em lote
 
@@ -95,16 +100,20 @@ Marque os participantes pela caixa de seleção de cada linha, ou marque **todos
 Antes de disparar, uma confirmação mostra **quantas pessoas realmente vão receber** o e-mail — o sistema já desconta quem está pendente/cancelado desse número, então a confirmação nunca superestima. Esse envio "por filtro" tem um teto de **1000 participantes por disparo**; se o filtro tiver mais gente que isso, o excedente não é processado e o resultado avisa isso explicitamente.
 
 {: .important }
-> **Envio grande é gradual — e isso é esperado, não travamento.** Passando de um certo volume, o V3REvent não manda tudo de uma vez: ele despacha em **lotes de 100 mensagens a cada 5 minutos** (esses dois números são configuráveis pela equipe técnica, se o seu servidor de e-mail exigir outro ritmo), para não sobrecarregar o envio de e-mail do site. A confirmação já avisa quando isso vai acontecer e estima a duração; enquanto o envio corre, um aviso na própria tela mostra quantos participantes e quantos lotes ainda faltam. Se você tentar disparar outro envio em lote nesse meio-tempo, a tela recusa e pede para aguardar o que já está em andamento — **é para não haver dois lotes concorrentes reenviando para a mesma lista**.
+> **Envio grande é gradual — e isso é esperado, não travamento.** Passando de um certo volume, o V3REvent não manda tudo de uma vez: ele despacha em **lotes de 100 mensagens a cada 5 minutos** (esses dois números são configuráveis pela equipe técnica, se o seu servidor de e-mail exigir outro ritmo), para não sobrecarregar o envio de e-mail do site. A confirmação já avisa quando isso vai acontecer e estima a duração; enquanto o envio corre, um aviso na própria tela mostra quantos participantes e quantos lotes ainda faltam.
+
+{: .note }
+> **Um segundo envio em lote, pedido enquanto o primeiro ainda corre, entra na fila — não é recusado.** Ele espera o que já está em andamento terminar e só então começa a despachar os seus próprios lotes; o ritmo (100 mensagens a cada 5 minutos) é o mesmo para todos, então pedir de novo **alonga a fila**, nunca acelera o envio. Isso ajuda o caso comum de reenviar aos poucos, conforme você vai encontrando quem precisa: seleciona um grupo numa página da lista e manda, depois acha outro grupo em outra página (ou outro filtro) e manda de novo — sem precisar esperar o primeiro terminar para pedir o segundo.
 
 ### Nova tentativa automática quando o envio falha
 
-![Linha com a etiqueta "Em nova tentativa" e a data prevista, com o botão de reenvio desabilitado](/assets/screenshots/inscricoes-em-nova-tentativa.png)
+Quando um envio (automático ou reenvio) esbarra num problema **temporário** — o servidor de e-mail fora do ar, um limite de envio momentâneo, a caixa de entrada cheia —, o V3REvent **tenta de novo sozinho**, até 3 vezes, com um intervalo cada vez maior entre as tentativas. Enquanto isso, o **ícone de envelope daquele participante fica acinzentado e desabilitado** — sem a cor de sempre, sinal de que não há nada para você fazer ali. Passe o mouse sobre o ícone para ver a previsão: **"Nova tentativa automática a caminho, prevista para [data e hora]"**, seguida do histórico de reenvio quando já houver um (**"— reenviado Nx, último em [data]"**).
 
-Quando um envio (automático ou reenvio) esbarra num problema **temporário** — o servidor de e-mail fora do ar, um limite de envio momentâneo, a caixa de entrada cheia —, o V3REvent **tenta de novo sozinho**, até 3 vezes, com um intervalo cada vez maior entre as tentativas. Enquanto isso, o participante aparece com a etiqueta **"Em nova tentativa"**.
+{: .tip }
+> **Em celular não há como passar o mouse**, então essa previsão não aparece lá — só o ícone acinzentado, indicando que o envio está sendo cuidado sozinho. É uma escolha deliberada, do mesmo tipo já explicada para o número do pedido (veja **[Reenvio individual](#reenvio-individual)**).
 
 {: .note }
-> **"Em nova tentativa" quer dizer "não faça nada agora".** É exatamente por isso que o reenvio manual fica desabilitado nesse estado (veja acima) — reenviar por cima de uma tentativa automática já agendada duplicaria o envio assim que ela desse certo. Espere: se a nova tentativa funcionar, o estado muda sozinho para enviado; se as três tentativas se esgotarem, a falha é registrada como definitiva e o reenvio manual volta a ficar disponível.
+> **Ícone acinzentado quer dizer "não faça nada agora".** É exatamente por isso que o reenvio manual fica desabilitado nesse estado — reenviar por cima de uma tentativa automática já agendada duplicaria o envio assim que ela desse certo. Espere: se a nova tentativa funcionar, o ícone volta ao normal (enviado); se as três tentativas se esgotarem, a falha é registrada como definitiva e o reenvio manual volta a ficar disponível.
 
 Nem toda falha é retentada: **endereço de e-mail ausente ou claramente inválido não entra em nova tentativa automática**, porque insistir não resolve — o problema é o dado, não o envio. Nesse caso, corrija o e-mail do participante e use o reenvio manual.
 

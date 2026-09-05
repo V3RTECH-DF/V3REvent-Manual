@@ -23,18 +23,19 @@ Os dados da organização que promove os eventos — reaproveitados em recibos, 
 
 ## E-mails
 
-Os templates da comunicação automática.
+Os templates da comunicação automática — três, cada um com **assunto** e **corpo** próprios.
 
 ![Configurações — aba E-mails](/assets/screenshots/config-emails.png)
 
-- **Remetente** (nome e e-mail);
-- **Template de confirmação** (enviado a cada participante);
-- **Template de relatório** (enviado ao responsável).
+- **Remetente** (nome e e-mail), no topo, vale para os três;
+- **E-mail de confirmação** (enviado a cada participante ao confirmar a inscrição);
+- **E-mail de relatório** (enviado ao responsável, com o resumo e o anexo dos inscritos);
+- **E-mail de acesso à área do inscrito** (enviado a quem pede o link na **[Área do Inscrito](/modulos/area-do-inscrito/)**, informando o e-mail usado na inscrição).
 
-Os templates aceitam **variáveis** (como o nome do evento, o nome do participante e o **código de inscrição**), exibidas como dica na própria tela. Cada evento pode sobrescrever esses textos.
+Cada bloco mostra, abaixo do texto, **quando aquele e-mail é disparado** e as **variáveis** que valem ali — exibidas como dica na própria tela, e diferentes entre os três (o de confirmação usa `{event_name}`, `{attendee_name}` etc.; o de acesso usa `{access_url}`, `{valid_hours}`, `{site_name}` e `{site_url}`). Cada evento pode sobrescrever os dois primeiros; o e-mail de acesso é único para toda a organização, já que a Área do Inscrito não é de um evento específico.
 
-{: .note }
-> O **e-mail de acesso à Área do Inscrito** (o link enviado a quem pede para reencontrar as próprias inscrições) já sai com um texto pronto, mas **ainda não aparece nesta lista para você editar** — ao contrário dos dois templates acima. Se quiser um texto diferente do padrão, fale com o suporte.
+{: .tip }
+> **O e-mail de acesso à área do inscrito traz um link pessoal, de uso único, que expira em algumas horas.** Vale manter no texto a frase avisando isso (o padrão já traz) — é o que evita que alguém encaminhe a mensagem achando que o link continua valendo depois.
 
 ## Aparência
 

@@ -191,9 +191,10 @@ Inscrito](/modulos/area-do-inscrito/)**: a pessoa informa lá o e-mail usado na
 inscrição e recebe sozinha um link de acesso, sem depender de você. Se preferir
 resolver você mesmo, peça para conferir a caixa de spam primeiro; não achando, vá
 em **Inscrições**, encontre o participante e clique em **Reenviar confirmação** —
-funciona para qualquer inscrição já **confirmada**. Se a linha mostrar a etiqueta
-**"Em nova tentativa"**, não reenvie: o próprio sistema já está tentando de novo
-sozinho, e o botão fica temporariamente desabilitado por causa disso. Veja
+funciona para qualquer inscrição já **confirmada**. Se o ícone de reenvio aparecer
+**acinzentado**, não force: passe o mouse sobre ele (no computador) para confirmar
+— a dica mostra "Nova tentativa automática a caminho" — e não reenvie, o próprio
+sistema já está tentando de novo sozinho. Veja
 **[Inscrições → Reenviar a confirmação de inscrição](/modulos/inscricoes/#reenviar-a-confirmação-de-inscrição)**.
 </details>
 

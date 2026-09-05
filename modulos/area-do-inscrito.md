@@ -82,4 +82,4 @@ Quem gerencia o evento **não vê nem monta nada** a partir desta tela — ela n
 
 - A página é marcada como **não indexável** para buscadores (ela lida com dado pessoal, então não deve aparecer em busca).
 - Um pedido de exclusão de dados (LGPD) apaga também os links de acesso daquele e-mail, mesmo que a pessoa nunca tenha se inscrito em nada.
-- O e-mail de acesso sai com um texto pronto; diferente dos demais e-mails automáticos do plugin, ele **ainda não pode ser personalizado** por você — veja **[Configurações → E-mails](/modulos/configuracoes/)**.
+- O e-mail de acesso sai com um texto pronto, mas **pode ser personalizado** — assunto, corpo e as variáveis `{access_url}`, `{valid_hours}`, `{site_name}` e `{site_url}` — em **[Configurações → E-mails](/modulos/configuracoes/#e-mails)**, no bloco "E-mail de acesso à área do inscrito".

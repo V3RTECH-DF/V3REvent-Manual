@@ -12,6 +12,36 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## O aviso de nova tentativa automática virou dica do ícone, não mais uma etiqueta na linha
+**v1.82.2 · setembro de 2026**
+
+A etiqueta âmbar **"Em nova tentativa"**, introduzida na v1.77.0, saiu da lista **Inscrições**. No lugar dela, o participante nesse estado aparece com o **ícone de reenvio acinzentado e desabilitado** — passe o mouse sobre ele (no computador) para ver a previsão, algo como *"Nova tentativa automática a caminho, prevista para 06/09/2026, 22:11:38"*, somada ao histórico de reenvio quando já houver um. O comportamento por trás continua o mesmo (o sistema tenta de novo sozinho, até 3 vezes); só a forma de avisar mudou, para caber na coluna mais enxuta introduzida na v1.82.1. Veja **[Inscrições → Nova tentativa automática](/modulos/inscricoes/#nova-tentativa-automática-quando-o-envio-falha)**.
+
+{: .note }
+> **No celular não há como passar o mouse**, então a previsão não aparece lá — só o ícone acinzentado, indicando que o envio está sendo cuidado sozinho.
+
+## Coluna Ações mais enxuta na lista de inscritos
+**v1.82.1 · setembro de 2026**
+
+Na lista **Inscrições**, o número do pedido ao lado do ícone de reenvio (antes escrito por extenso, "Pedido #1319") virou um **ícone**, e o número passa a aparecer só ao **passar o mouse** sobre ele. O histórico de reenvio ("Reenviado Nx, último em...") saiu de baixo do botão e foi para a **dica do próprio ícone de reenvio** — nessa versão, o aviso "Em nova tentativa" ainda seguia visível como etiqueta na linha (isso mudou logo em seguida, veja a novidade da v1.82.2 acima). A coluna fica mais curta e mais fácil de ler, sobretudo com muitos participantes na tela.
+
+{: .note }
+> **No celular não há como passar o mouse**, então o número do pedido e o histórico de reenvios não aparecem lá — é uma escolha deliberada, não uma falha. No celular, toque no ícone de link para abrir o pedido. Veja **[Inscrições → Reenvio individual](/modulos/inscricoes/#reenvio-individual)**.
+
+## Reenvio em lote: pedido novo entra na fila, e o envio que não saía foi corrigido
+**v1.82.0 · setembro de 2026**
+
+Pedir um reenvio em lote enquanto **outro já está em andamento** deixou de ser recusado — agora o pedido novo **entra no fim da fila** e começa a ser despachado assim que o anterior terminar. Isso ajuda quem reenvia aos poucos, conforme vai encontrando quem precisa em páginas ou filtros diferentes da lista: manda para um grupo, acha outro grupo depois, manda de novo, sem esperar. O ritmo continua o mesmo para todos (100 mensagens a cada 5 minutos), então acumular pedidos na fila **alonga a espera**, nunca acelera. Veja **[Inscrições → Reenvio em lote](/modulos/inscricoes/#reenvio-em-lote)**.
+
+Também corrigimos um defeito: em algumas situações, o **reenvio em lote não estava enviando nada**, embora a tela confirmasse o pedido normalmente. Se você usou o reenvio em lote entre as versões afetadas, vale conferir se as pessoas realmente receberam o e-mail — pelo Mailpit/log de envio do seu servidor, ou perguntando a quem deveria ter recebido.
+
+## E-mail de acesso à área do inscrito agora é editável
+**v1.81.0 · setembro de 2026**
+
+O texto do **e-mail de acesso à Área do Inscrito** — o que leva o link para quem pede para reencontrar as próprias inscrições — deixou de ser fixo. Em **Configurações → E-mails** ele ganhou seu próprio bloco, com **assunto**, **corpo**, a explicação de quando é disparado, e as variáveis `{access_url}`, `{valid_hours}`, `{site_name}` e `{site_url}`. Veja **[Configurações → E-mails](/modulos/configuracoes/#e-mails)**.
+
+---
+
 ## Correção de privacidade na Área do Inscrito
 **v1.79.2 · setembro de 2026**
 
@@ -46,7 +76,7 @@ A aba **Credencial** do editor de evento ganhou um controle **Oferecer credencia
 
 O reenvio "para todos os que correspondem ao filtro" deixou de ter um teto de alcance — antes, um filtro com mais de mil participantes deixava o excedente inalcançável, mesmo repetindo a operação. Agora o envio chega a todos, em qualquer volume, só que de forma **gradual**: em lotes de 100 mensagens a cada 5 minutos, para não sobrecarregar o servidor de e-mail do site. Antes de confirmar um envio grande, a tela avisa que ele será gradual e estima quanto tempo leva; enquanto ele roda, um aviso mostra quantos lotes ainda faltam — para você não achar que travou e mandar de novo.
 
-Além disso, uma indisponibilidade passageira no envio de e-mail (servidor fora do ar por instantes, limite de taxa, caixa cheia) deixa de derrubar o envio de vez: o V3REvent **tenta de novo sozinho**, até três vezes, com intervalo crescente — com o participante marcado como **"Em nova tentativa"** enquanto isso acontece. E-mail ausente ou claramente inválido não entra nessa recuperação automática, porque nesse caso o problema é o dado, não o envio. Veja **[Inscrições → Reenviar a confirmação de inscrição](/modulos/inscricoes/#reenviar-a-confirmação-de-inscrição)**.
+Além disso, uma indisponibilidade passageira no envio de e-mail (servidor fora do ar por instantes, limite de taxa, caixa cheia) deixa de derrubar o envio de vez: o V3REvent **tenta de novo sozinho**, até três vezes, com intervalo crescente — com o participante marcado como **"Em nova tentativa"** enquanto isso acontece (a partir da v1.82.2 esse aviso deixou de ser uma etiqueta na linha e passou a aparecer ao passar o mouse sobre o ícone de reenvio acinzentado). E-mail ausente ou claramente inválido não entra nessa recuperação automática, porque nesse caso o problema é o dado, não o envio. Veja **[Inscrições → Reenviar a confirmação de inscrição](/modulos/inscricoes/#reenviar-a-confirmação-de-inscrição)**.
 
 ## Sugestão de correção de e-mail no formulário público
 **v1.76.0 · setembro de 2026**
