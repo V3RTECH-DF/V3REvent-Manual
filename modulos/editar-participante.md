@@ -46,6 +46,8 @@ A caixa **Avisar o participante** vem **marcada por padrão**: ao salvar, a pess
 
 A própria tela de edição mostra o **histórico** de mudanças já feitas naquele participante: **quem** alterou, **quando**, e **o que era antes** e **o que passou a ser**. É a forma de saber se um dado que parece estranho foi corrigido de propósito ou se é a informação original.
 
+Quando a alteração envolve diferença de valor, o histórico também mostra a **situação da diferença** — cobrada, dada de cortesia, devolvida automaticamente ou devolvida por fora — sempre em **português**, direto no que você lê, sem termo técnico.
+
 ## Aviso de check-in já feito
 
 Se o participante **já fez check-in** no evento, a tela de edição avisa isso antes de você salvar — para você saber que está corrigindo o cadastro de alguém que já está no local, e não de alguém que ainda vai chegar.
@@ -78,11 +80,16 @@ Se a pessoa pagar por **Pix ou dinheiro**, direto com a coordenação (fora do l
 
 Você escolhe uma das duas:
 
-- **Devolver a diferença** — se o meio de pagamento original aceitar reembolso automático parcial, o sistema devolve sozinho. Se não aceitar, a diferença fica **registrada** e a tela avisa que a devolução precisa ser feita **por fora** (Pix, transferência).
+- **Devolver a diferença** — se o meio de pagamento original aceitar reembolso automático parcial, o sistema devolve sozinho. Se **não** aceitar, a tela avisa **antes de você confirmar** que o valor vai precisar ser devolvido **por fora** (Pix, transferência ou dinheiro) — e, depois de salvar, confirma de novo que a devolução ficou registrada como manual, para não passar despercebido.
 - **Não devolver** — a modalidade muda e a diferença fica com a organização.
+
+{: .tip }
+> **O aviso de devolução manual é sobre você, não sobre o sistema.** Ele não movimenta dinheiro nenhum — é o lembrete de que **você** precisa devolver o valor ao participante por fora, porque o meio de pagamento usado naquele pedido não faz isso sozinho.
 
 {: .note }
 > **Pedido de valor zero não tem o que devolver.** Se a inscrição saiu de graça (por exemplo, um cupom de 100%), não existe diferença a estornar — a troca de modalidade só muda o cadastro.
+
+![Troca que barateia: decisão "Devolver a diferença" com o aviso de que o meio de pagamento não devolve automaticamente](/assets/screenshots/editar-participante-devolucao-manual.png)
 
 ## ⚠️ Nunca reembolse o valor total do pedido pela tela da loja
 

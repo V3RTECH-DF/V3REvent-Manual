@@ -12,6 +12,16 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Correções na edição de participante: aviso de devolução manual e caixa de aviso no painel do site
+**v1.86.1 · setembro de 2026**
+
+Duas correções da tela **[Editar participante](/modulos/editar-participante/)**, lançada na v1.86.0:
+
+- No **painel de gestão pelo site** (veja **[Gestão pelo site](/modulos/gestao-pelo-site/)**), a caixa **Avisar o participante** não aparecia na tela (ficava sem tamanho, invisível) — o valor continuava marcado por padrão, então o aviso saía do mesmo jeito, mas não dava para desmarcar. Agora ela aparece normalmente, igual no `wp-admin`.
+- Numa troca que **barateia**, quando o meio de pagamento não devolve automaticamente, a tela agora **avisa antes de você confirmar** que o valor vai precisar ser devolvido por fora (Pix, transferência ou dinheiro) — e confirma de novo, **depois de salvar**, que a devolução ficou registrada como manual. Antes, esse aviso só existia no histórico, depois do fato.
+
+De quebra, o **histórico de alterações** da tela passou a mostrar a situação da diferença (cobrada, cortesia, devolvida, devolução manual…) em **português**, em vez do termo técnico interno.
+
 ## Editar participante — corrija sem cancelar, e resolva a diferença quando o valor muda
 **v1.86.0 · setembro de 2026**
 
@@ -21,6 +31,14 @@ Quando a correção muda a **modalidade** e isso muda o preço, o sistema calcul
 
 {: .important }
 > **Reembolso total pela tela do pedido cancela a inscrição inteira.** Para acertar uma troca de modalidade, use sempre a tela **Editar participante** — nunca o reembolso integral do pedido no WooCommerce.
+
+## Correção de privacidade no comprovante individual: modalidade removida, data mais legível
+**v1.85.1 · setembro de 2026**
+
+Duas correções no **[comprovante individual](/modulos/documentos/#comprovante)**, lançado na v1.85.0:
+
+- O comprovante **não mostra mais a modalidade** da inscrição. Em alguns eventos, o campo usado para calcular o preço carrega um dado sensível (por exemplo, "Pessoa com Deficiência") — e ele aparecia ali, num documento pensado para circular por WhatsApp. Agora o comprovante traz só nome e código do participante, além dos dados do próprio evento (evento, data, local e situação).
+- A **data do evento** passou a aparecer em formato legível (ex.: "19/09/2026"), em vez do valor cru gravado no sistema.
 
 ## Comprovante individual de inscrição — um documento próprio para cada participante
 **v1.85.0 · setembro de 2026**
@@ -36,6 +54,21 @@ O comprovante chega ao participante de três formas: pela **[Área do Inscrito](
 **v1.84.0 · setembro de 2026**
 
 Na lista **Inscrições**, o campo de busca passou a encontrar a pessoa pelo nome ou e-mail do **participante**, além do nome ou e-mail do **responsável** — antes só o responsável era encontrado. Se você lembra do nome de quem participou mas não de quem pagou, agora a busca encontra do mesmo jeito. Veja **[Inscrições → Filtros e busca](/modulos/inscricoes/#filtros-e-busca)**.
+
+## Coluna "Envio da confirmação": saiba quem recebeu e quem não recebeu
+**v1.83.0 · setembro de 2026**
+
+A lista **Inscrições** ganhou uma coluna própria para o e-mail de confirmação — separada do status da inscrição, que só diz se o **pagamento** foi confirmado, não se o e-mail chegou. Antes, quando o envio falhava, não havia como saber pela tela: só o próprio participante reclamando é que revelava o problema. Agora a coluna mostra, para cada participante, uma entre quatro situações: **Enviado**, **Em nova tentativa**, **Falhou** (com o motivo ao passar o mouse) ou **Não enviado**. Ela vem marcada para aparecer por padrão.
+
+Também há um **filtro por situação de envio**, ao lado dos outros filtros da lista, e um **aviso no topo** quando existe alguma falha no recorte que você está vendo — com um botão que já aplica o filtro "Falhou", para você ir direto a quem precisa de atenção. Veja **[Inscrições → Envio da confirmação](/modulos/inscricoes/#envio-da-confirmação-saiba-quem-recebeu-e-quem-não-recebeu)**.
+
+{: .tip }
+> **Quando o e-mail do participante está registrado de duas formas diferentes** (por exemplo, um campo de e-mail do formulário do evento e um cadastro interno divergem), a confirmação passa a ir para os **dois endereços**, em mensagens separadas — melhor um e-mail a mais do que a pessoa não receber nada.
+
+## O menu do V3REvent agora se agrupa com os outros produtos V3RTECH no menu lateral
+**v1.83.0 · setembro de 2026**
+
+Quando outros produtos da V3RTECH instalados no mesmo site também anunciam sua posição, o V3REvent passa a aparecer **agrupado com eles** no menu lateral do WordPress, em vez de espalhado em qualquer ordem. Sozinho no site — sem outros produtos da casa, ou com versões antigas deles —, nada muda: a posição do menu continua a mesma de sempre.
 
 ---
 

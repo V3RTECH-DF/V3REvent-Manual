@@ -63,6 +63,32 @@ Acima da tabela, escolha quantos participantes aparecem por página: **20, 50, 1
 | **Confirmada** | Pagamento concluído — inscritos registrados e e-mails enviados. |
 | **Cancelada** | A inscrição foi cancelada. |
 
+## Envio da confirmação — saiba quem recebeu e quem não recebeu
+
+![Coluna Envio da confirmação na lista de Inscrições, com o filtro por situação de envio](/assets/screenshots/inscricoes-envio-confirmacao.png)
+
+O **status da inscrição** (Pendente/Confirmada/Cancelada) diz se o pagamento foi concluído — não se o participante **recebeu** o e-mail de confirmação. São coisas diferentes: uma inscrição pode estar Confirmada e, ainda assim, o e-mail ter falhado. Por isso a lista tem uma coluna própria, **Envio da confirmação**, marcada para aparecer por padrão, com uma de quatro situações por participante:
+
+| Situação | O que significa |
+|---|---|
+| **Enviado** | O e-mail de confirmação foi entregue com sucesso. |
+| **Em nova tentativa** | O envio falhou por um motivo temporário e o sistema está tentando de novo sozinho — veja **[Nova tentativa automática](#nova-tentativa-automática-quando-o-envio-falha)**. |
+| **Falhou** | As tentativas se esgotaram (ou o e-mail está ausente/inválido) e ninguém vai tentar de novo sozinho. Passe o mouse sobre a etiqueta para ver o **motivo** da falha. |
+| **Não enviado** | Ainda não houve nenhuma tentativa de envio — por exemplo, a inscrição ainda está pendente. |
+
+### Filtro e aviso de falha
+
+Ao lado dos outros filtros da lista (Evento, Status, Período, Busca), há um filtro **Situação do envio**, para você isolar, por exemplo, só quem está com **Falhou**.
+
+Quando existe **pelo menos uma falha** no recorte atual (evento, período e filtros que você tem selecionados), um **aviso aparece no topo da lista** avisando quantas pessoas estão nessa situação, com um botão que já **aplica o filtro "Falhou"** para você — sem precisar caçar quem precisa de atenção linha por linha. Essa contagem é calculada **antes** de qualquer filtro de e-mail que você já tenha aplicado, então o aviso não desaparece só porque você mudou de recorte.
+
+{: .tip }
+> **Por que isto importa.** Antes desta coluna, uma falha de envio só aparecia quando o próprio participante reclamava — e a essa altura ele já podia ter se inscrito de novo, achando que a primeira tentativa não tinha ido adiante. Agora quem organiza descobre e corrige antes disso acontecer.
+
+### Quando o e-mail do participante tem duas fontes divergentes
+
+Alguns eventos guardam o e-mail do participante em mais de um lugar (por exemplo, um campo de e-mail do formulário do evento e um cadastro interno). Quando essas duas fontes **divergem**, a confirmação vai para **os dois endereços**, em **mensagens separadas** — nunca os dois juntos no mesmo e-mail, o que exporia um endereço ao outro. Se um dos dois for inválido ou estiver vazio, a mensagem vai só para o que for válido; se os dois forem iguais, é enviada uma única mensagem, sem duplicar. A situação **Falhou** só acontece quando nenhum dos endereços é válido.
+
 ## Reenviar a confirmação de inscrição
 
 Quando um participante diz que não recebeu o e-mail de confirmação — foi para o spam, digitou o e-mail errado e já corrigiu, ou simplesmente sumiu —, você reenvia direto da lista, sem precisar pedir para a pessoa se inscrever de novo.
