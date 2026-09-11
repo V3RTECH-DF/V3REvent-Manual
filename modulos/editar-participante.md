@@ -12,7 +12,7 @@ Está disponível em três lugares — a lista geral **[Inscrições](/modulos/i
 
 Quem tem acesso: **Coordenador de Eventos** do evento e **Administrador da Organização** — o mesmo alcance de quem já edita o evento e reenvia confirmações.
 
-<!-- Captura pendente (#174): ![Botão "Editar participante" na coluna Ações da lista de Inscrições](/assets/screenshots/inscricoes-editar-participante.png) -->
+![Botão "Editar participante" (ícone de lápis) na coluna Ações da lista de Inscrições](/assets/screenshots/inscricoes-editar-participante.png)
 
 ## Por que isto importa
 
@@ -32,6 +32,8 @@ O formulário que abre é **o mesmo formulário público de inscrição**, já p
 3. Se a modalidade mudou e isso muda o preço, a tela mostra a **diferença de valor** na hora (veja a seção abaixo) e pede que você escolha o que fazer com ela.
 4. Confira a caixa **Avisar o participante** (vem marcada por padrão).
 5. Salve. A mudança vale na hora, e fica registrada no **histórico de alterações** da própria tela.
+
+![Formulário de edição do participante, com a caixa "Avisar o participante"](/assets/screenshots/editar-participante-formulario.png)
 
 ## Avisando o participante
 
@@ -59,9 +61,13 @@ Você escolhe uma das duas:
 - **Cobrar a diferença** — o valor vem preenchido com a diferença calculada, mas é **editável**: dá para cobrar menos do que o valor cheio, por exemplo como upgrade promocional para quem já estava inscrito.
 - **Não cobrar (cortesia)** — a modalidade muda e ninguém paga a diferença.
 
+![Confirmação de uma troca que encarece: opção atual, nova opção, diferença e a escolha entre cobrar e dar de cortesia](/assets/screenshots/editar-participante-diferenca.png)
+
 Escolhendo cobrar, o sistema gera um **link de pagamento** para você copiar e mandar por WhatsApp ou e-mail; o participante paga **sem precisar de login**, pelos meios de pagamento que o site já aceita.
 
 Enquanto não for paga, a lista de Inscrições mostra **"diferença pendente de R$ X"** na linha da pessoa; quando o pagamento é concluído, o aviso **some sozinho**.
+
+![Lista de Inscrições mostrando "diferença pendente" na linha do participante](/assets/screenshots/inscricoes-diferenca-pendente.png)
 
 Se a pessoa pagar por **Pix ou dinheiro**, direto com a coordenação (fora do link), use **Marcar como paga por fora** para zerar a pendência sem exigir um novo pagamento pelo site. Se a coordenação decidir **não cobrar** depois de já ter oferecido o link, use **Dispensar**.
 

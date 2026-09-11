@@ -31,7 +31,7 @@ O e-mail traz também um **link permanente** para reemissão (`recibo/{código}`
 
 Cada **participante confirmado** — pague ele a inscrição ou não — tem um **comprovante individual de inscrição** próprio, com uma página no celular e uma versão em **PDF** para baixar ou imprimir: nome, código, evento, data, local e situação. Nenhuma outra resposta do formulário aparece — nem a modalidade, que em alguns eventos é dado sensível (por exemplo, quando a opção de preço é "pessoa com deficiência").
 
-<!-- Captura pendente (#174): ![Comprovante público de inscrição](/assets/screenshots/comprovante-publico.png) -->
+![Comprovante público de inscrição, aberto no celular](/assets/screenshots/comprovante-publico.png)
 
 ### Por que isto importa
 
