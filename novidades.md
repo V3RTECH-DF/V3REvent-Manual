@@ -13,7 +13,7 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 ---
 
 ## Comprovante individual de inscrição — um documento próprio para cada participante
-**v1.84.0 · setembro de 2026**
+**v1.85.0 · setembro de 2026**
 
 Além do recibo (que é só do responsável pelo pagamento), cada **participante confirmado** agora tem um **comprovante individual de inscrição**: uma página no celular e um PDF para baixar ou imprimir, com nome, modalidade, código, evento, data, local e situação — **sem valor pago, sem dados de quem pagou e sem os nomes dos outros participantes do grupo**. Pode ser mandado com segurança a qualquer participante, mesmo quando quem pagou a inscrição foi outra pessoa, e serve também para eventos que **não emitem credencial**.
 
