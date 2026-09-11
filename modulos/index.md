@@ -36,6 +36,6 @@ O V3REvent tem três frentes: o **painel administrativo** (onde você cria e ger
 |---|---|
 | **[Formulário público de inscrição](/modulos/formulario-publico/)** | Onde o responsável inscreve o grupo, importa planilha, vê o preço ao vivo e paga. |
 | **[Página do evento](/modulos/pagina-do-evento/)** | A página temática do evento: hero, informações, programação e compartilhamento. |
-| **[Documentos: recibo, credencial e certificado](/modulos/documentos/)** | O recibo do pagador, a credencial com QR e o certificado de participação. |
+| **[Documentos: recibo, comprovante, credencial e certificado](/modulos/documentos/)** | O recibo do pagador, o comprovante individual de cada participante, a credencial com QR e o certificado de participação. |
 | **[Área do Inscrito](/modulos/area-do-inscrito/)** | Onde qualquer inscrito informa o e-mail e reencontra sozinho suas inscrições, comprovante, credencial e certificado. |
 | **[Personalizar com CSS](/modulos/personalizar-css/)** | Classes e variáveis de estilo das telas públicas, para quem quer personalizar via CSS adicional do tema. |

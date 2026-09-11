@@ -32,7 +32,10 @@ Os templates da comunicação automática — três, cada um com **assunto** e *
 - **E-mail de relatório** (enviado ao responsável, com o resumo e o anexo dos inscritos);
 - **E-mail de acesso à área do inscrito** (enviado a quem pede o link na **[Área do Inscrito](/modulos/area-do-inscrito/)**, informando o e-mail usado na inscrição).
 
-Cada bloco mostra, abaixo do texto, **quando aquele e-mail é disparado** e as **variáveis** que valem ali — exibidas como dica na própria tela, e diferentes entre os três (o de confirmação usa `{event_name}`, `{attendee_name}` etc.; o de acesso usa `{access_url}`, `{valid_hours}`, `{site_name}` e `{site_url}`). Cada evento pode sobrescrever os dois primeiros; o e-mail de acesso é único para toda a organização, já que a Área do Inscrito não é de um evento específico.
+Cada bloco mostra, abaixo do texto, **quando aquele e-mail é disparado** e as **variáveis** que valem ali — exibidas como dica na própria tela, e diferentes entre os três (o de confirmação usa `{event_name}`, `{attendee_name}`, `{voucher_url}` etc.; o de acesso usa `{access_url}`, `{valid_hours}`, `{site_name}` e `{site_url}`). Cada evento pode sobrescrever os dois primeiros; o e-mail de acesso é único para toda a organização, já que a Área do Inscrito não é de um evento específico.
+
+{: .tip }
+> **`{voucher_url}` é o link do [comprovante individual](/modulos/documentos/#comprovante) daquele participante.** Se o seu texto personalizado do e-mail de confirmação não usa essa variável, o link é **acrescentado automaticamente ao final** da mensagem — ninguém deixa de receber o comprovante por causa de uma personalização feita antes desta variável existir.
 
 {: .tip }
 > **O e-mail de acesso à área do inscrito traz um link pessoal, de uso único, que expira em algumas horas.** Vale manter no texto a frase avisando isso (o padrão já traz) — é o que evita que alguém encaminhe a mensagem achando que o link continua valendo depois.

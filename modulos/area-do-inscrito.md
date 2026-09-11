@@ -6,7 +6,7 @@ nav_order: 16
 
 # Área do Inscrito
 
-A **Área do Inscrito** é uma página pública onde qualquer pessoa que já se inscreveu em algum evento seu consegue, sozinha, informar o e-mail, receber um link de acesso e enxergar as próprias inscrições — com o comprovante, a credencial e o certificado, quando cada um já estiver disponível. Ela existe para o caso mais comum de chamado de suporte: *"perdi o e-mail de confirmação, e agora?"*
+A **Área do Inscrito** é uma página pública onde qualquer pessoa que já se inscreveu em algum evento seu consegue, sozinha, informar o e-mail, receber um link de acesso e enxergar as próprias inscrições — com o comprovante, o recibo (quando aplicável), a credencial e o certificado, cada um só quando já estiver disponível. Ela existe para o caso mais comum de chamado de suporte: *"perdi o e-mail de confirmação, e agora?"*
 
 {: .note }
 > **A página é criada sozinha na atualização** para a v1.79.0 — procure por "Área do inscrito" em **Páginas** do WordPress. Se preferir montá-la em outro endereço (ou reconstruir o visual com o construtor de página do seu tema), use o shortcode `[v3revent_area_inscrito]` — veja **[Shortcodes e API](/modulos/shortcodes-e-api/)**.
@@ -21,7 +21,7 @@ Com a Área do Inscrito, a pessoa resolve isso sozinha, a qualquer hora, sem dep
 
 1. A pessoa acessa a página e digita o e-mail que usou na inscrição.
 2. Ela recebe um e-mail com um link de acesso.
-3. Ao abrir o link, vê as inscrições associadas àquele e-mail — com comprovante, credenciais e certificados, cada um só quando já disponível.
+3. Ao abrir o link, vê as inscrições associadas àquele e-mail — com o comprovante, o recibo (quando for o caso), as credenciais e os certificados, cada um só quando já disponível.
 
 ![Tela para solicitar o link de acesso](/assets/screenshots/area-inscrito-solicitar-link.png)
 
@@ -32,17 +32,17 @@ Com a Área do Inscrito, a pessoa resolve isso sozinha, a qualquer hora, sem dep
 
 O que aparece depende de **como ela participou** daquela inscrição — o sistema reconhece dois papéis possíveis para o mesmo e-mail, e nunca mistura os dois:
 
-- **Quem fez a inscrição (o responsável/pagador)** — inclusive quando inscreveu um grupo inteiro num único pedido — vê **o comprovante do pagamento** e a **credencial e o certificado de todos os participantes daquele pedido**, os dela e os dos colegas.
-- **Quem só participa** — foi incluído num grupo que outra pessoa comprou e pagou — vê **apenas a própria credencial e o próprio certificado**. Não vê os colegas de grupo, nem o comprovante, **nem o código da inscrição** — o código some junto porque é ele que abre o comprovante para quem o tem em mãos.
+- **Quem fez a inscrição (o responsável/pagador)** — inclusive quando inscreveu um grupo inteiro num único pedido — vê o **recibo do pagamento** (com o valor total e o número do pedido) e a **credencial e o certificado de todos os participantes daquele pedido**, os dela e os dos colegas, além do **próprio comprovante**.
+- **Quem só participa** — foi incluído num grupo que outra pessoa comprou e pagou — vê **o próprio comprovante, a própria credencial e o próprio certificado**. Não vê os colegas de grupo, nem o recibo, **nem o código da inscrição** — o código some junto porque é ele que abre o recibo para quem o tem em mãos. O comprovante não depende desse código: é uma prova de participação individual, sem valor pago nem dado de quem pagou, então quem só participa também tem direito a ele.
 
-![Área do inscrito para quem fez a inscrição de um grupo — vê o comprovante e a credencial de todos os participantes](/assets/screenshots/area-inscrito-responsavel-grupo.png)
+![Área do inscrito para quem fez a inscrição de um grupo — vê o recibo e a credencial de todos os participantes](/assets/screenshots/area-inscrito-responsavel-grupo.png)
 
-![Área do inscrito para quem só participa — vê apenas a própria credencial](/assets/screenshots/area-inscrito-participante.png)
+![Área do inscrito para quem só participa — vê o próprio comprovante e a própria credencial](/assets/screenshots/area-inscrito-participante.png)
 
 Uma inscrição **aguardando pagamento** aparece marcada como tal, sem documentos (eles só existem depois da confirmação); uma inscrição **cancelada** simplesmente não aparece.
 
 {: .important }
-> **A página não cria nenhuma permissão nova.** Ela só mostra, a quem já tinha aquele e-mail numa inscrição, o que já estava disponível para aquele e-mail — comprovante, credencial e certificado seguiam existindo antes, só não havia um lugar único para reencontrá-los.
+> **A página não cria nenhuma permissão nova.** Ela só mostra, a quem já tinha aquele e-mail numa inscrição, o que já estava disponível para aquele e-mail — comprovante, recibo, credencial e certificado seguiam existindo antes, só não havia um lugar único para reencontrá-los.
 
 ## Por que a resposta é sempre a mesma
 

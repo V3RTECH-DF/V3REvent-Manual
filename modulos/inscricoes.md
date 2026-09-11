@@ -20,7 +20,7 @@ No topo, você filtra por:
 - **Evento**;
 - **Status** (pendente, confirmada, cancelada);
 - **Período** (data de início e fim);
-- **Busca** por nome ou e-mail do responsável.
+- **Busca** por nome ou e-mail — do **participante** ou do **responsável**, dos dois lados. Antes, a busca só encontrava pelo responsável; se você digitasse o nome de quem participou mas não pagou, a linha não aparecia. Agora basta lembrar de qualquer um dos dois.
 
 ## A tabela
 
@@ -71,7 +71,10 @@ Quando um participante diz que não recebeu o e-mail de confirmação — foi pa
 
 ![Lista de inscritos com o ícone de reenvio em cada linha e a barra de ação em lote com participantes selecionados](/assets/screenshots/inscricoes-reenvio.png)
 
-Na coluna **Ações** de cada participante há dois ícones: um **envelope** (reenviar a confirmação) e, ao lado, um **ícone de link externo** que abre o pedido no WooCommerce. Passe o mouse sobre qualquer um dos dois para ver o que ele faz antes de clicar — é assim que você confere, sem precisar clicar, qual é o pedido (o número aparece só na dica ao passar o mouse) e se aquele participante já foi reenviado antes.
+Na coluna **Ações** de cada participante há três ícones: um **envelope** (reenviar a confirmação), um **link em cadeia** (copiar o link do comprovante individual daquele participante — veja **[Comprovante](/modulos/documentos/#comprovante)**) e, ao lado, um **ícone de link externo** que abre o pedido no WooCommerce. Passe o mouse sobre qualquer um dos três para ver o que ele faz antes de clicar — é assim que você confere, sem precisar clicar, qual é o pedido (o número aparece só na dica ao passar o mouse) e se aquele participante já foi reenviado antes.
+
+{: .note }
+> **O ícone de copiar link do comprovante só liga para inscrição confirmada** — o mesmo motivo do envelope de reenvio: comprovante de quem ainda não confirmou ou já foi cancelado não existe. Ele não tem versão em lote de propósito: é para colar numa conversa (WhatsApp, e-mail avulso), uma pessoa de cada vez. Disponível para quem coordena o evento e para a administração.
 
 {: .tip }
 > **Em celular não há mouse, então esse hover não existe** — o número do pedido e o histórico de reenvios só aparecem em **desktop**. É uma escolha deliberada, não uma falha: no celular, toque no ícone de link para abrir o pedido diretamente.
@@ -84,7 +87,7 @@ Nem toda linha pode receber reenvio:
 - Enquanto há uma **nova tentativa automática** pendente para aquele participante (veja abaixo), o botão também fica desabilitado — o sistema já vai tentar sozinho.
 
 {: .note }
-> **O recibo só acompanha quando o participante é quem pagou.** Numa inscrição individual, reenviar a confirmação reenvia também o recibo, porque a mesma pessoa é participante e responsável. Numa inscrição em grupo (uma empresa ou escola inscrevendo várias pessoas), reenviar para um participante manda **só a confirmação dele** — o recibo tem o valor total do pedido e os dados de quem pagou, e não deveria ir para cada participante do grupo. Quem precisa do recibo é sempre o responsável, que já o recebeu por e-mail e pode reemitir pelo link permanente (veja **[Documentos](/modulos/documentos/)**).
+> **O recibo só acompanha quando o participante é quem pagou.** Numa inscrição individual, reenviar a confirmação reenvia também o recibo, porque a mesma pessoa é participante e responsável. Numa inscrição em grupo (uma empresa ou escola inscrevendo várias pessoas), reenviar para um participante manda **só a confirmação dele** — o recibo tem o valor total do pedido e os dados de quem pagou, e não deveria ir para cada participante do grupo. Quem precisa do recibo é sempre o responsável, que já o recebeu por e-mail e pode reemitir pelo link permanente (veja **[Documentos](/modulos/documentos/)**). O que cada participante do grupo recebe, com ou sem ser o responsável, é o próprio **[comprovante individual](/modulos/documentos/#comprovante)** — sem valor pago nem dados de quem pagou.
 
 Já reenviado antes? Passe o mouse sobre o envelope: a dica mostra **"Reenviado Nx, último em [data]"** — assim você não manda cinco cópias porque três pessoas já pediram a mesma coisa.
 

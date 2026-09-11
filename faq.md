@@ -227,14 +227,16 @@ Inscrito](/modulos/area-do-inscrito/)**.
 <summary>Por que a Área do Inscrito não mostra os colegas de um participante, só o dele?</summary>
 
 Depende de quem é o dono do e-mail usado para acessar. Quem **fez a inscrição**
-(pagou, inclusive de um grupo inteiro) vê o comprovante e a credencial/certificado
-de **todos** os participantes daquele pedido. Quem **só participa** — foi incluído
-num grupo que outra pessoa comprou — vê **apenas a própria** credencial e
-certificado, nunca os colegas, o comprovante ou o **código da inscrição** — o
-código some junto porque é ele que abre o comprovante para quem o tem em mãos.
-Não é uma limitação a corrigir:
-é para que o valor pago e os dados dos colegas não fiquem visíveis a quem não
-pagou. Veja **[Área do Inscrito](/modulos/area-do-inscrito/)**.
+(pagou, inclusive de um grupo inteiro) vê o recibo e a credencial/certificado
+de **todos** os participantes daquele pedido, além do próprio comprovante. Quem
+**só participa** — foi incluído num grupo que outra pessoa comprou — vê **apenas
+a própria** credencial, certificado e comprovante, nunca os colegas, o recibo ou
+o **código da inscrição** — o código some junto porque é ele que abre o recibo
+para quem o tem em mãos. Não é uma limitação a corrigir: é para que o valor pago
+e os dados dos colegas não fiquem visíveis a quem não pagou. O comprovante
+individual, sem esse tipo de dado, é a exceção de propósito — todo participante
+confirmado tem o seu, pague ele ou não. Veja **[Área do
+Inscrito](/modulos/area-do-inscrito/)**.
 </details>
 
 <details markdown="1">

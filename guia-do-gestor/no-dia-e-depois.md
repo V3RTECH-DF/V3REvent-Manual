@@ -34,9 +34,11 @@ Terminado o credenciamento, use **Exportar presentes** (em Relatórios) para ger
 - emitir **declarações ou certificados** de participação;
 - ações de **fidelização** com o público presente.
 
-## Recibos e comprovantes
+## Recibo e comprovante individual
 
 O **responsável** (pagador) já recebeu o **recibo em PDF** na conclusão do pedido, com um **link permanente** para reemissão. Se precisar reenviar ou reimprimir, o recibo está sempre acessível pelo código. Lembre que o recibo é um **comprovante de pagamento**, não uma nota fiscal — a emissão fiscal segue as suas obrigações, à parte.
+
+Cada **participante confirmado** — pague ele ou não — tem também o próprio **[comprovante individual de inscrição](/modulos/documentos/#comprovante)**: sem valor pago nem dado de quem pagou, então pode ser mandado a qualquer um sem cuidado especial. É o documento que faltava para eventos que não emitem credencial, e chega ao participante pela Área do Inscrito, pelo e-mail de confirmação ou por um link que você copia e cola direto numa conversa, na lista de **[Inscrições](/modulos/inscricoes/)**.
 
 ## Pós-evento: avaliação e retrospectiva
 

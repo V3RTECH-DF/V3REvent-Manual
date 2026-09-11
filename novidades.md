@@ -12,6 +12,23 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Comprovante individual de inscrição — um documento próprio para cada participante
+**v1.84.0 · setembro de 2026**
+
+Além do recibo (que é só do responsável pelo pagamento), cada **participante confirmado** agora tem um **comprovante individual de inscrição**: uma página no celular e um PDF para baixar ou imprimir, com nome, modalidade, código, evento, data, local e situação — **sem valor pago, sem dados de quem pagou e sem os nomes dos outros participantes do grupo**. Pode ser mandado com segurança a qualquer participante, mesmo quando quem pagou a inscrição foi outra pessoa, e serve também para eventos que **não emitem credencial**.
+
+O comprovante chega ao participante de três formas: pela **[Área do Inscrito](/modulos/area-do-inscrito/)**, pelo **link no e-mail de confirmação** (que o ícone de envelope reenvia, inclusive em lote, na lista de Inscrições), e por um **link para copiar e colar numa conversa** — novo ícone na lista de **[Inscrições](/modulos/inscricoes/)**, disponível para quem coordena o evento e para a administração. Veja **[Documentos → Comprovante](/modulos/documentos/#comprovante)**.
+
+{: .tip }
+> Personalizou o e-mail de confirmação antes desta versão? Não precisa editar nada: se o seu texto não usa a nova variável `{voucher_url}`, o link do comprovante é acrescentado automaticamente ao final da mensagem.
+
+## A busca da lista de Inscrições agora encontra pelos dois lados
+**v1.84.0 · setembro de 2026**
+
+Na lista **Inscrições**, o campo de busca passou a encontrar a pessoa pelo nome ou e-mail do **participante**, além do nome ou e-mail do **responsável** — antes só o responsável era encontrado. Se você lembra do nome de quem participou mas não de quem pagou, agora a busca encontra do mesmo jeito. Veja **[Inscrições → Filtros e busca](/modulos/inscricoes/#filtros-e-busca)**.
+
+---
+
 ## O aviso de nova tentativa automática virou dica do ícone, não mais uma etiqueta na linha
 **v1.82.2 · setembro de 2026**
 
