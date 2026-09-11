@@ -124,6 +124,7 @@ Nela você:
 
 - **Reenvia a confirmação de inscrição** por e-mail, individualmente ou em lote (com o mesmo envio gradual e a mesma nova tentativa automática da tela geral) — veja os detalhes em **[Inscrições → Reenviar a confirmação de inscrição](/modulos/inscricoes/#reenviar-a-confirmação-de-inscrição)**;
 - **Copia o link do comprovante individual** de um participante confirmado, para colar numa conversa — veja **[Documentos → Comprovante](/modulos/documentos/#comprovante)**;
+- **Edita os dados de um participante** — nome, e-mail, modalidade e demais campos do formulário, com aviso automático ao participante e histórico de alterações — veja **[Editar participante](/modulos/editar-participante/)**;
 - **Exporta** a lista do evento em **CSV**, **XLSX** ou **PDF**, pelos botões acima da tabela.
 
 {: .note }
@@ -275,6 +276,16 @@ Ao adicionar um lote novo, o **início já vem sugerido** como o minuto seguinte
 
 {: .note }
 > **A página se atualiza sozinha na virada do lote.** Quem estiver com o formulário aberto no navegador quando o lote virar vê o **preço mudar automaticamente**, sem precisar recarregar a página — e o valor cobrado no carrinho é sempre o mesmo que apareceu na tela.
+
+### Troca com diferença de valor
+
+Quando alguém edita a modalidade de um participante e isso muda o preço, o V3REvent pergunta o que fazer com a diferença — cobrar ou dar de cortesia quando encarece, devolver ou não quando barateia (veja **[Editar participante → Troca que muda o valor](/modulos/editar-participante/#troca-que-muda-o-valor)**). Aqui você define o **padrão do evento** para essa pergunta, com dois seletores:
+
+- **Quando a troca encarece** — **Cobrar a diferença** (padrão sugerido) ou **Cortesia** (não cobrar).
+- **Quando a troca barateia** — **Devolver a diferença** ou **Não devolver**.
+
+{: .note }
+> **É só o ponto de partida.** O padrão pré-marca a escolha na tela de edição de cada participante, mas quem está editando pode escolher diferente naquela troca específica — o seletor aqui não trava a decisão.
 
 ## Aparência
 

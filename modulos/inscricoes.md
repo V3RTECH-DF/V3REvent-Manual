@@ -74,6 +74,9 @@ Quando um participante diz que não recebeu o e-mail de confirmação — foi pa
 Na coluna **Ações** de cada participante há três ícones: um **envelope** (reenviar a confirmação), um **link em cadeia** (copiar o link do comprovante individual daquele participante — veja **[Comprovante](/modulos/documentos/#comprovante)**) e, ao lado, um **ícone de link externo** que abre o pedido no WooCommerce. Passe o mouse sobre qualquer um dos três para ver o que ele faz antes de clicar — é assim que você confere, sem precisar clicar, qual é o pedido (o número aparece só na dica ao passar o mouse) e se aquele participante já foi reenviado antes.
 
 {: .note }
+> **Errou um dado na inscrição de alguém?** O botão **Editar participante**, na mesma linha, corrige nome, e-mail, modalidade ou qualquer campo do formulário — sem cancelar a inscrição e refazer. Disponível para quem coordena o evento e para a administração, sempre por pessoa (não em lote). Veja **[Editar participante](/modulos/editar-participante/)**.
+
+{: .note }
 > **O ícone de copiar link do comprovante só liga para inscrição confirmada** — o mesmo motivo do envelope de reenvio: comprovante de quem ainda não confirmou ou já foi cancelado não existe. Ele não tem versão em lote de propósito: é para colar numa conversa (WhatsApp, e-mail avulso), uma pessoa de cada vez. Disponível para quem coordena o evento e para a administração.
 
 {: .tip }

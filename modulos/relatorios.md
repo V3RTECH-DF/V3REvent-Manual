@@ -15,7 +15,7 @@ A tela **Relatórios** aprofunda um evento: indicadores, a lista completa de par
 
 ## Indicadores do evento
 
-Ao selecionar um evento, você vê os números dele: **inscritos**, **pagos**, **aguardando** e **receita**.
+Ao selecionar um evento, você vê os números dele: **inscritos**, **pagos**, **aguardando** e **receita**. A receita já considera as trocas de modalidade — devoluções descontadas, diferenças pagas somadas (veja **[Painel → O que entra na Receita total](/modulos/painel/)**).
 
 ## Tabela de participantes
 

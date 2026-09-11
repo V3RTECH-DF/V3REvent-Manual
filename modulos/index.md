@@ -18,6 +18,7 @@ O V3REvent tem três frentes: o **painel administrativo** (onde você cria e ger
 | **[Eventos](/modulos/eventos/)** | A lista de todos os eventos: criar, editar e duplicar. |
 | **[Editor de evento](/modulos/editor-evento/)** | Configura um evento por abas: detalhes, programação, campos, preços, aparência, página, credencial, certificado, avaliação, patrocinadores, relatório, WooCommerce e equipe. |
 | **[Inscrições](/modulos/inscricoes/)** | A lista de inscrições: filtros, status e exportação. |
+| **[Editar participante](/modulos/editar-participante/)** | Corrige os dados de uma inscrição — nome, e-mail, modalidade — e resolve a diferença de valor quando a troca muda o preço. |
 | **[Relatórios](/modulos/relatorios/)** | Indicadores do evento, participantes, presença e exportações (inclusive só presentes). |
 | **[Check-in](/modulos/checkin/)** | Credenciamento por leitura de QR ou código, no dia do evento. |
 | **[Configurações](/modulos/configuracoes/)** | Perfil da organização, e-mails, aparência global, LGPD e integrações. |

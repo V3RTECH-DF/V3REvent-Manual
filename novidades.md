@@ -12,10 +12,20 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Editar participante — corrija sem cancelar, e resolva a diferença quando o valor muda
+**v1.86.0 · setembro de 2026**
+
+Errou a modalidade, o nome ou o e-mail de alguém na hora da inscrição? Agora dá para **corrigir direto**, sem cancelar a inscrição e pedir para a pessoa se inscrever de novo. Um botão **Editar participante**, por linha, abre o mesmo formulário do público já preenchido — vale por pessoa, não em lote — na lista **[Inscrições](/modulos/inscricoes/)** (`wp-admin` e painel de gestão pelo site) e na aba **Inscritos** do evento. Por padrão, o participante recebe de novo a confirmação com os dados corrigidos; a tela guarda um **histórico** de quem alterou o quê, e avisa se a pessoa já fez check-in.
+
+Quando a correção muda a **modalidade** e isso muda o preço, o sistema calcula a diferença na hora, no lote em que a pessoa se inscreveu, e oferece o caminho para resolver: **cobrar** (com link de pagamento sem login, ou marcar como paga por fora) ou dar de **cortesia**, quando encarece; **devolver** (automático, quando o meio de pagamento aceita) ou **não devolver**, quando barateia. Um padrão por evento, em **Preços → Troca com diferença de valor**, evita repetir a escolha a cada troca. Veja **[Editar participante](/modulos/editar-participante/)**.
+
+{: .important }
+> **Reembolso total pela tela do pedido cancela a inscrição inteira.** Para acertar uma troca de modalidade, use sempre a tela **Editar participante** — nunca o reembolso integral do pedido no WooCommerce.
+
 ## Comprovante individual de inscrição — um documento próprio para cada participante
 **v1.85.0 · setembro de 2026**
 
-Além do recibo (que é só do responsável pelo pagamento), cada **participante confirmado** agora tem um **comprovante individual de inscrição**: uma página no celular e um PDF para baixar ou imprimir, com nome, modalidade, código, evento, data, local e situação — **sem valor pago, sem dados de quem pagou e sem os nomes dos outros participantes do grupo**. Pode ser mandado com segurança a qualquer participante, mesmo quando quem pagou a inscrição foi outra pessoa, e serve também para eventos que **não emitem credencial**.
+Além do recibo (que é só do responsável pelo pagamento), cada **participante confirmado** agora tem um **comprovante individual de inscrição**: uma página no celular e um PDF para baixar ou imprimir, com nome, código, evento, data, local e situação — **sem valor pago, sem dados de quem pagou e sem os nomes dos outros participantes do grupo**. Pode ser mandado com segurança a qualquer participante, mesmo quando quem pagou a inscrição foi outra pessoa, e serve também para eventos que **não emitem credencial**.
 
 O comprovante chega ao participante de três formas: pela **[Área do Inscrito](/modulos/area-do-inscrito/)**, pelo **link no e-mail de confirmação** (que o ícone de envelope reenvia, inclusive em lote, na lista de Inscrições), e por um **link para copiar e colar numa conversa** — novo ícone na lista de **[Inscrições](/modulos/inscricoes/)**, disponível para quem coordena o evento e para a administração. Veja **[Documentos → Comprovante](/modulos/documentos/#comprovante)**.
 
