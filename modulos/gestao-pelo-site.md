@@ -29,7 +29,7 @@ Pronto — a URL dessa página é o link que você compartilha com quem vai gere
 
 ## O que aparece — e para quem
 
-A tela é a **mesma gestão** do painel administrativo, só em outra casca: as mesmas telas, os mesmos dados, os mesmos botões.
+A tela é a **mesma gestão** do painel administrativo, só em outra casca: as mesmas telas, os mesmos dados, os mesmos botões. O cabeçalho é mais enxuto — sem a logo do V3REvent e sem os botões **Manual do Usuário** e **Enviar Feedback** (esses dois só fazem sentido dentro do `wp-admin`) —, mas a barra de abas é a mesma, com a mesma aba ativa marcada por um traço vermelho.
 
 ![Página de gestão aberta no site, mostrando o Painel com os indicadores do evento](/assets/screenshots/gestao-frontend-painel.png)
 
@@ -72,7 +72,7 @@ Quem está **logado**, mas não tem papel em **nenhum** evento do plugin, vê es
 
 - **A largura do painel é a largura do container onde você colou o shortcode.** O V3REvent não define um tamanho próprio: ele preenche o espaço que a página permitir, respeitando o limite máximo que o seu construtor de página (Elementor, Divi, etc.) tiver definido para aquele container. Quer o painel mais largo ou mais estreito? **Ajuste a largura do container na página**, não há nada a configurar no plugin.
 - **Um link por pessoa, não um link geral divulgado.** Trate a URL da página de gestão como você trataria o link do `wp-admin`: não é para colocar num cartaz nem numa página pública de navegação. Quem não tiver papel só vê o aviso, mas não há motivo para expor o caminho à toa.
-- **Funciona no celular de propósito.** O Check-in nasceu pensando em uso na portaria, em pé, com uma mão só — é a tela mais provável de ser usada fora de uma mesa. Em celular e tablet, os botões e campos das telas de gestão são maiores, no tamanho recomendado para toque — no computador, com mouse, o tamanho é o de sempre. Veja **[Novidades](/novidades/)**.
+- **Funciona no celular de propósito.** O Check-in nasceu pensando em uso na portaria, em pé, com uma mão só — é a tela mais provável de ser usada fora de uma mesa. Em celular e tablet, os botões e campos das telas de gestão são maiores, no tamanho recomendado para toque — no computador, com mouse, o tamanho é o de sempre. Na tela estreita, a barra de abas quebra em mais de uma linha quando não cabe inteira — nada some, só empilha. Veja **[Novidades](/novidades/)**.
 - **"Meu evento sumiu" quase sempre é papel, não bug.** Antes de investigar, confirme em que evento a pessoa foi designada — veja a nota de permissões acima.
 
 ## Quando dá errado
