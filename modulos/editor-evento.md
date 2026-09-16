@@ -448,6 +448,11 @@ Reúne a **pesquisa de avaliação** do evento e a sua retrospectiva, em quatro 
 
 A pesquisa é **anônima** e liberada apenas para quem **fez check-in**: cada participante recebe um link próprio (`avaliacao/{código}`), responde sem login, e a resposta **não fica vinculada à pessoa**. Veja **[No dia e depois](/guia-do-gestor/no-dia-e-depois/)**.
 
+{: .note }
+> **Passado o prazo de retenção** (definido em **[Configurações → Avançado](/modulos/configuracoes/#avançado)**), os **comentários escritos** — as respostas de texto livre — são apagados junto com os demais dados do evento: é onde alguém pode ter se identificado ou citado outra pessoa. As **notas e as respostas de múltipla escolha permanecem**, para você continuar comparando esta edição com as próximas.
+
+Como a pesquisa é anônima, **não existe "a resposta desta pessoa"**: um pedido de exclusão de participante (direito do titular) não mexe nas respostas de avaliação — apagar pelo único vínculo disponível apagaria o comentário de **todos** os respondentes daquele evento. O risco de identificação já é coberto pelo prazo de retenção acima. Veja **[Política de Privacidade](/legal/privacidade/)**.
+
 ## Patrocinadores
 
 Cadastra os **patrocinadores e apoiadores** do evento. A aba é **opcional** — eventos sem patrocinadores ficam em branco.

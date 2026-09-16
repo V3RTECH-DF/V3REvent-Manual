@@ -12,6 +12,12 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Expurgo da avaliação poupa as notas, e o pedido de exclusão não mexe nos comentários de ninguém
+**v1.90.0 · setembro de 2026**
+
+- **Passado o prazo de retenção, só os comentários escritos das avaliações são apagados.** As notas e as respostas de múltipla escolha **continuam**, para você comparar uma edição com a anterior — é só o texto digitado à mão que some, porque é onde alguém pode ter se identificado ou citado outra pessoa. A aba **[Avaliação](/modulos/editor-evento/#avaliação)** do evento e a tela de **[Configurações → Avançado](/modulos/configuracoes/#avançado)** agora avisam isso.
+- **Um pedido de exclusão de participante não altera as respostas de avaliação.** A pesquisa é anônima, então não existe "a resposta desta pessoa" — apagar pelo único vínculo disponível apagaria o comentário de todos os respondentes daquele evento. Veja **[Política de Privacidade](/legal/privacidade/)**.
+
 ## Avisa quem tenta se inscrever de novo, mais quatro modelos de e-mail editáveis, e o Painel com um nome só
 **v1.89.0 · setembro de 2026**
 

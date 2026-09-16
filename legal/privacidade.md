@@ -80,9 +80,13 @@ A responsabilidade por contratar esses serviços e garantir conformidade (inclus
 
 Os titulares (os participantes e responsáveis) têm os direitos previstos na LGPD — confirmação, acesso, correção, eliminação, portabilidade, entre outros. Como controlador, você os atende diretamente: o plugin oferece ferramentas de **exportação** e **exclusão/anonimização** de dados de um titular (por código de inscrição ou e-mail), além das telas de inscrições e relatórios para localizar e conferir os registros.
 
+**Exceção: as respostas de avaliação.** Um pedido de exclusão **não** apaga nem altera as respostas da pesquisa de avaliação do evento. Como a pesquisa é anônima, não existe vínculo entre a resposta e a pessoa — o único identificador disponível é o do evento, e apagar por ele eliminaria o comentário de **todos** os respondentes, não só do titular que pediu. O risco de identificação nos comentários escritos é tratado pelo **prazo de retenção** (abaixo), não pela exclusão individual.
+
 ### B.6. Retenção e eliminação
 
 O V3REvent permite definir um **prazo de retenção** (Configurações → Avançado): os dados de inscritos de eventos já encerrados são **expurgados automaticamente** fora dessa janela. Você define o prazo conforme sua necessidade e obrigações legais. A exclusão manual de uma inscrição pelo painel também remove os respectivos registros.
+
+Nas pesquisas de **[Avaliação](/modulos/editor-evento/#avaliação)**, o expurgo apaga só os **comentários escritos**; as respostas objetivas (notas, escalas e escolhas) permanecem, para a comparação entre edições continuar possível.
 
 ### B.7. Segredos e segurança
 

@@ -66,7 +66,7 @@ Privacidade, geração de PDF e manutenção.
 
 ![Configurações — aba Avançado](/assets/screenshots/config-avancado.png)
 
-- **Retenção de dados (LGPD)** — por quantos meses manter os dados de inscritos de eventos encerrados (0 = desativado). Fora dessa janela, o expurgo é automático.
+- **Retenção de dados (LGPD)** — por quantos meses manter os dados de inscritos de eventos encerrados (0 = desativado). Fora dessa janela, o expurgo é automático. Nas pesquisas de **[Avaliação](/modulos/editor-evento/#avaliação)**, o expurgo apaga só os **comentários escritos** — notas, escalas e escolhas continuam, para você comparar uma edição com a próxima.
 - **URL da política de privacidade** — o link que aparece no consentimento do formulário.
 - **Gotenberg** — campo reservado para o endpoint de um serviço externo de geração de PDF de alta fidelidade. Aparece marcado como **"Em breve"** e ainda não é editável; enquanto isso, o plugin gera os PDFs internamente.
 - **Excluir dados ao desinstalar** — opção para remover tudo do banco caso o plugin seja desinstalado.
