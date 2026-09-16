@@ -57,6 +57,17 @@ Cada evento define um **[Tipo de inscrição](/modulos/editor-evento/)** que con
 {: .tip }
 > **Tem um cupom de desconto?** No carrinho ou no checkout, o participante pode inserir o código no campo de cupom e o desconto é abatido do total. Veja como criar e restringir cupons em **[Descontos com cupom](/guia-do-gestor/descontos-com-cupom/)**.
 
+## Já está inscrito?
+{: #já-está-inscrito }
+
+Se o CPF (ou, em eventos que não pedem CPF, o e-mail) que a pessoa digitou já tem uma inscrição confirmada **neste mesmo evento**, o formulário avisa antes de ela seguir para o pagamento, com um caminho para encontrar a própria inscrição — mesmo endereço da **[Área do Inscrito](/modulos/area-do-inscrito/)**.
+
+{: .important }
+> **É um aviso, não um bloqueio.** A pessoa pode continuar e se inscrever de novo mesmo assim — por exemplo, se ela se arrependeu da modalidade escolhida antes e está comprando a certa, ou se são duas pessoas diferentes que, por coincidência, compartilham e-mail (um casal que só tem um endereço, por exemplo, em evento sem CPF). O formulário só evita que alguém se inscreva duas vezes **sem perceber**.
+
+{: .tip }
+> **Por que isto importa.** Antes deste aviso, uma inscrição repetida só aparecia depois — no relatório do evento, com um total maior do que o esperado, ou quando o participante reclamava de ter pago duas vezes. A lista de **[Inscrições](/modulos/inscricoes/#duplicidade--quando-a-pessoa-já-está-inscrita)** também marca esses casos com **Duplicada**, para quem organiza revisar depois.
+
 ## Sugestão de correção de e-mail
 
 Todo campo de e-mail do formulário — o do responsável e qualquer campo de e-mail que você tenha configurado no evento — confere o domínio digitado e, se ele for parecido demais com um domínio comum (`gmail.com`, `hotmail.com`, `outlook.com`, `yahoo.com`...), sugere a correção logo abaixo do campo.

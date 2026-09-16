@@ -12,6 +12,15 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Avisa quem tenta se inscrever de novo, mais quatro modelos de e-mail editáveis, e o Painel com um nome só
+**v1.89.0 · setembro de 2026**
+
+- **Quem tenta se inscrever de novo no mesmo evento agora é avisado.** O formulário público mostra que a pessoa já está inscrita e aponta o caminho até a própria inscrição — mas não bloqueia, porque às vezes a segunda inscrição é mesmo intencional. A comparação é pelo **CPF** (quando o evento pede) ou pelo **e-mail**. A lista de **[Inscrições](/modulos/inscricoes/#duplicidade--quando-a-pessoa-já-está-inscrita)** ganhou a coluna **Duplicidade**, para quem organiza revisar os casos depois.
+- **Recibo, credencial, convite de avaliação e certificado agora têm o texto do e-mail editável**, em **[Configurações → E-mails](/modulos/configuracoes/#e-mails)** — antes só confirmação, relatório e acesso à área do inscrito podiam ser personalizados.
+- **Configurações e Shortcodes e API deixaram de aparecer para Coordenador de Eventos e Equipe de Evento.** As duas telas são de administração da organização; antes elas abriam para os outros papéis e davam erro ao salvar.
+- **A tela inicial chama-se "Painel" nos dois lugares** — painel administrativo e gestão pelo site. Antes, o painel administrativo ainda dizia "Dashboard".
+- O código que identifica recibo, credencial, comprovante e certificado ficou **mais longo** (mais difícil de adivinhar por tentativa). Nada muda para quem já tem um link em mãos: **todo link já emitido continua funcionando**.
+
 ## Correções na edição de participante: aviso de devolução manual e caixa de aviso no painel do site
 **v1.86.1 · setembro de 2026**
 

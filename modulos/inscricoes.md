@@ -89,6 +89,18 @@ Quando existe **pelo menos uma falha** no recorte atual (evento, período e filt
 
 Alguns eventos guardam o e-mail do participante em mais de um lugar (por exemplo, um campo de e-mail do formulário do evento e um cadastro interno). Quando essas duas fontes **divergem**, a confirmação vai para **os dois endereços**, em **mensagens separadas** — nunca os dois juntos no mesmo e-mail, o que exporia um endereço ao outro. Se um dos dois for inválido ou estiver vazio, a mensagem vai só para o que for válido; se os dois forem iguais, é enviada uma única mensagem, sem duplicar. A situação **Falhou** só acontece quando nenhum dos endereços é válido.
 
+## Duplicidade — quando a pessoa já está inscrita
+
+A coluna **Duplicidade** marca **Duplicada** quando o mesmo participante aparece mais de uma vez no mesmo evento. A comparação é pelo **CPF**, quando o evento pede CPF no formulário; nos eventos que não pedem, é pelo **e-mail**.
+
+{: .note }
+> **A marcação é informativa — o V3REvent não bloqueia nem cancela nada sozinho.** Duas inscrições da mesma pessoa podem ser legítimas (ela se arrependeu de uma modalidade e comprou outra, por exemplo) ou um erro de fato. Cabe a quem organiza olhar o caso e decidir: manter as duas, cancelar uma pelo **menu de status** da linha, ou falar com o participante.
+
+{: .tip }
+> **Por que isto importa.** Antes desta coluna, uma inscrição repetida só aparecia quando alguém reparava manualmente — folheando a lista, ou quando o relatório fechava com um total maior do que o esperado. Agora a duplicidade salta aos olhos assim que ela acontece, na própria lista, sem precisar cruzar planilha.
+
+O mesmo aviso aparece para quem se inscreve: se a pessoa tentar se inscrever de novo no mesmo evento, o **formulário público** avisa que ela já está inscrita e mostra um caminho para a própria inscrição — mas não impede que ela prossiga, caso a segunda inscrição seja mesmo intencional. Veja **[Formulário público → Já está inscrito?](/modulos/formulario-publico/#já-está-inscrito)**.
+
 ## Reenviar a confirmação de inscrição
 
 Quando um participante diz que não recebeu o e-mail de confirmação — foi para o spam, digitou o e-mail errado e já corrigiu, ou simplesmente sumiu —, você reenvia direto da lista, sem precisar pedir para a pessoa se inscrever de novo.

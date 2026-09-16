@@ -117,7 +117,7 @@ A aba **Inscritos** traz, dentro do próprio evento, a **lista de inscrições d
 
 Nela você:
 
-- **Vê a lista** de inscrições do evento — responsável, número de inscritos, valor, data e **status** —, com **busca** por nome/e-mail e **filtro por status** (pendente, confirmada, cancelada);
+- **Vê a lista** de inscrições do evento — responsável, número de inscritos, valor, data e **status** —, com **busca** por nome/e-mail e **filtro por status** (pendente, confirmada, cancelada), e a mesma coluna **Duplicidade** da tela geral, marcando quem já tem outra inscrição neste evento — veja **[Inscrições → Duplicidade](/modulos/inscricoes/#duplicidade--quando-a-pessoa-já-está-inscrita)**;
 - **Troca o status** de cada inscrição: clique na **etiqueta de status** (a "pílula" colorida) da linha e escolha **Pendente / Confirmada / Cancelada** no menu — a mudança é aplicada na hora;
 
 ![Menu de troca de status aberto na etiqueta de uma inscrição](/assets/screenshots/evento-editor-inscritos-status.png)

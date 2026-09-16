@@ -9,6 +9,9 @@ has_children: true
 
 A tela **Shortcodes e API** (menu do V3REvent) reúne, num só lugar, tudo o que você precisa para **exibir conteúdo do evento em páginas** e **conectar o V3REvent a outros sistemas** — CRM, planilhas, dashboards e, principalmente, automações no [n8n](https://n8n.io). A tela tem **quatro abas**: Shortcodes, Chaves de API, API (referência) e Webhooks.
 
+{: .note }
+> **Só o Administrador da Organização (e o administrador do site) vê esta tela.** Coordenador de Eventos e Equipe de Evento não a encontram no menu — antes ela aparecia para os dois, mas nada ali fazia sentido fora do papel de administração. Veja os três papéis em **[Primeiros passos → Entender os papéis de acesso](/primeiros-passos/#4-entender-os-papéis-de-acesso)**.
+
 Esta página cobre a **visão geral** e os **shortcodes**. As demais abas têm páginas próprias, mais detalhadas:
 
 - **[Chaves de API](/modulos/api-chaves/)** — como criar, dar escopo e revogar as chaves de acesso.

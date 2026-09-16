@@ -243,7 +243,7 @@ curl "https://SEU-SITE.com.br/wp-json/v3revent/v1/public/registrations/542" \
   "created_at": "2026-08-03 14:22:10",
   "attendees": [
     {
-      "public_id": "ATT-7F3A9C",
+      "public_id": "8C36-0E01-3F2A-9D17",
       "field_data": { "nome_completo": "João Lima", "email": "joao@empresa.com.br", "cpf": "123.456.789-09" },
       "responsible_name": "Maria Souza",
       "responsible_email": "maria@empresa.com.br",
@@ -275,7 +275,7 @@ curl "https://SEU-SITE.com.br/wp-json/v3revent/v1/public/attendees?event_id=128&
 ```json
 [
   {
-    "public_id": "ATT-7F3A9C",
+    "public_id": "8C36-0E01-3F2A-9D17",
     "field_data": {
       "nome_completo": "João Lima",
       "email": "joao@empresa.com.br",
@@ -293,7 +293,7 @@ curl "https://SEU-SITE.com.br/wp-json/v3revent/v1/public/attendees?event_id=128&
 
 | Campo do inscrito | Significado |
 |---|---|
-| `public_id` | Identificador público do inscrito (o mesmo que vai no QR da credencial). |
+| `public_id` | Identificador público do inscrito (o mesmo que vai no QR da credencial). Inscritos emitidos antes da v1.89 têm um código mais curto — os dois formatos convivem e nenhum dos dois expira. |
 | `field_data` | Os campos do formulário preenchidos (nome, e-mail, CPF e o que mais você configurou). As chaves correspondem aos campos do seu formulário. |
 | `responsible_name` / `responsible_email` | O responsável pela inscrição. Em eventos individuais, são os dados do próprio participante. |
 | `status` | Situação do inscrito (ex.: `paid`, `pending`). |

@@ -8,6 +8,9 @@ nav_order: 10
 
 O V3REvent gera documentos automáticos a partir de um evento: o **recibo** (para o pagador), o **comprovante individual de inscrição** (para cada participante confirmado), a **credencial** (para cada participante, quando o evento oferece) e o **certificado de participação** (para quem é elegível). Todos usam a identidade do evento e os dados da organização, e têm um **link público por código** — imprimível e com versão em PDF.
 
+{: .note }
+> **O código ficou mais longo.** A partir da v1.89, cada documento novo ganha um código maior — mais difícil de adivinhar por tentativa. Isso não afeta nada do que já foi emitido: **todo recibo, credencial, comprovante e certificado já enviado continua abrindo pelo link antigo**, normalmente.
+
 {: .tip }
 > **Quem perdeu o link de um documento não precisa pedir para você reenviar.** A **[Área do Inscrito](/modulos/area-do-inscrito/)** deixa qualquer inscrito reencontrar sozinho, a partir do e-mail usado na inscrição, os documentos que já estão disponíveis para ele: o **comprovante** (todo participante confirmado), o **recibo** (só o responsável pela inscrição), e a credencial e o certificado, quando o evento os oferecer.
 

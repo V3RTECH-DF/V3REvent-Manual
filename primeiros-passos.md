@@ -50,8 +50,8 @@ O V3REvent controla quem pode fazer o quê por meio de **três papéis**. Isso p
 | Papel | Alcance | O que faz |
 |---|---|---|
 | **Administrador da Organização** | Todo o plugin | Cria e gerencia qualquer evento, define equipes, ajusta as Configurações e cuida da privacidade (LGPD). |
-| **Coordenador de Eventos** | Por evento | Gerencia tudo de **um evento específico** — configuração, inscrições, relatórios, credenciais — mas não mexe nas Configurações globais. |
-| **Equipe de Evento** | Por evento | Foco **operacional**: acompanha inscrições e faz o **check-in** no dia. Não altera a configuração do evento. |
+| **Coordenador de Eventos** | Por evento | Gerencia tudo de **um evento específico** — configuração, inscrições, relatórios, credenciais — mas não vê as Configurações globais nem a tela Shortcodes e API. |
+| **Equipe de Evento** | Por evento | Foco **operacional**: acompanha inscrições e faz o **check-in** no dia. Não altera a configuração do evento, nem vê as Configurações globais ou a tela Shortcodes e API. |
 
 Quem instala o plugin (usuários que já administram o WordPress) entra automaticamente como **Administrador da Organização**. A partir daí, você designa coordenadores e equipe **por evento**, na aba **Equipe** do editor de evento.
 
