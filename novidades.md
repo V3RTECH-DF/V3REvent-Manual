@@ -12,6 +12,17 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## O Painel passa a mostrar só confirmados no número grande, com a divisão por situação logo abaixo
+**v1.91.0 · setembro de 2026**
+
+- **"Total de inscritos" e "Total de inscrições" agora contam só quem está confirmado.** Antes, os dois números somavam também pendentes e cancelados. Nenhum número some: logo abaixo de cada cartão, uma **divisão por situação** mostra Confirmados, Pendentes e Cancelados — a soma das três continua batendo com o total de sempre.
+- **O gráfico "Inscritos por mês" passou a se chamar "Inscritos confirmados por mês"**, e a lista de últimos eventos no Painel agora mostra os **inscritos confirmados** de cada um.
+- **A diferença entre "inscrição" (o pedido) e "inscrito" (cada pessoa dele) agora aparece explicada na própria tela** — no Painel, em Inscrições, na aba Inscritos do editor de evento e em Relatórios.
+- **Atenção:** em **Relatórios**, no **relatório do evento em PDF** e no **e-mail de relatório** enviado ao responsável, "Total de inscritos" **continua somando todas as situações**, incluindo pendentes e cancelados — por isso esse número pode ser maior que o do Painel para o mesmo evento. Veja **[Painel](/modulos/painel/)**, **[Inscrições](/modulos/inscricoes/)** e **[Relatórios](/modulos/relatorios/#indicadores-do-evento)**.
+
+{: .tip }
+> **Quer saber quantas pessoas estão confirmadas num evento específico?** Filtre a lista de **[Inscrições](/modulos/inscricoes/)** por **Confirmada**.
+
 ## Expurgo da avaliação poupa as notas, e o pedido de exclusão não mexe nos comentários de ninguém
 **v1.90.0 · setembro de 2026**
 

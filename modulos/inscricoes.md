@@ -24,12 +24,12 @@ No topo, você filtra por:
 
 ## A tabela
 
-Cada linha é um **participante**, não um pedido. Numa inscrição de grupo (uma empresa ou escola inscrevendo várias pessoas num único pedido), cada pessoa aparece na sua própria linha — as linhas do mesmo pedido ficam visualmente agrupadas por uma borda, com o responsável (quem fez e pagou a inscrição) exibido como coluna em todas elas.
+Cada linha é um **participante** — um **inscrito**. Não confunda com **inscrição**: a inscrição é o pedido, e pode reunir vários inscritos (uma empresa ou escola inscrevendo várias pessoas num único pedido). Cada pessoa aparece na sua própria linha — as linhas do mesmo pedido ficam visualmente agrupadas por uma borda, com o responsável (quem fez e pagou a inscrição) exibido como coluna em todas elas.
 
 Para trocar o status, **clique na etiqueta de status** (a "pílula" colorida) de qualquer linha do pedido: abre um menu com os status disponíveis (Pendente / Confirmada / Cancelada), com o atual marcado. Escolha um e a mudança é **aplicada na hora**.
 
 {: .note }
-> **O status é do pedido, não da pessoa.** Trocar o status numa linha muda o status de **todos os participantes** daquele pedido — não existe "confirmar" um participante e deixar outro pendente no mesmo pedido. Num pedido com mais de um participante, a troca pede confirmação avisando quantas pessoas serão afetadas.
+> **O status é da inscrição, não do inscrito.** Trocar o status numa linha muda o status de **todos os inscritos** daquele pedido — não existe "confirmar" um participante e deixar outro pendente no mesmo pedido. Num pedido com mais de um participante, a troca pede confirmação avisando quantas pessoas serão afetadas.
 
 Quando um pedido ultrapassou a capacidade do evento, a inscrição aparece **sinalizada como excedente**.
 

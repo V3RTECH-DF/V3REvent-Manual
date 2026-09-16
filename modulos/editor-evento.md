@@ -113,6 +113,9 @@ Define se o formulário pede os **Dados do Responsável pela Inscrição**:
 
 A aba **Inscritos** traz, dentro do próprio evento, a **lista de inscrições daquele evento** — sem precisar sair para a tela geral **Inscrições** e filtrar. É a mesma tabela, só que já **presa a este evento**: some o filtro de evento e a coluna "Evento", e tudo o que você faz aqui vale só para as inscrições deste evento.
 
+{: .note }
+> Lembrando a diferença: **inscrição** é o pedido (pode reunir várias pessoas); **inscrito** é cada pessoa dele. Esta aba lista por inscrito, um por linha — veja **[Inscrições → A tabela](/modulos/inscricoes/#a-tabela)**.
+
 ![Aba Inscritos do editor de evento, com a lista e os botões de exportar](/assets/screenshots/evento-editor-inscritos.png)
 
 Nela você:
@@ -484,6 +487,9 @@ Monta o **relatório consolidado do evento em PDF**, com seções **escolhíveis
 O relatório é gerado **sob demanda** (não fica armazenado) e é um **download restrito ao painel** — por conter valores, equipe e retrospectiva, não tem link público. Também dá para gerá-lo pelo ícone de relatório na **[lista de eventos](/modulos/eventos/)**. Veja **[No dia e depois](/guia-do-gestor/no-dia-e-depois/)**.
 
 Todas as páginas trazem **cabeçalho** com a logo (ou nome) da sua organização e **rodapé** com o evento e a numeração ("página X de Y"). Títulos de seção e destaques seguem as **cores da sua organização** (a mesma cascata evento → organização → marca usada no formulário público). Os indicadores de **inscritos e presença** aparecem lado a lado, cada número junto do seu rótulo, com uma nota explicando o cálculo — pensados para não serem lidos errado numa leitura rápida.
+
+{: .important }
+> **"Total de inscritos" aqui soma todas as situações** (confirmados, pendentes e cancelados) — o mesmo vale para o **[e-mail de relatório](/modulos/configuracoes/#e-mails)** enviado ao responsável. É diferente do número grande do **[Painel](/modulos/painel/)**, que conta só confirmados. Veja a explicação completa em **[Relatórios → Indicadores do evento](/modulos/relatorios/#indicadores-do-evento)**.
 
 ### Modo de exibição da descrição
 

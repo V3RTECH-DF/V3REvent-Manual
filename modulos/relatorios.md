@@ -17,6 +17,11 @@ A tela **Relatórios** aprofunda um evento: indicadores, a lista completa de par
 
 Ao selecionar um evento, você vê os números dele: **inscritos**, **pagos**, **aguardando** e **receita**. A receita já considera as trocas de modalidade — devoluções descontadas, diferenças pagas somadas (veja **[Painel → O que entra na Receita total](/modulos/painel/)**).
 
+{: .important }
+> **Aqui, "Total de inscritos" soma todas as situações — diferente do Painel.** No **[Painel](/modulos/painel/)**, o número grande de "Total de inscritos" conta só quem está **confirmado**. Aqui em Relatórios (e também no **[Relatório do evento em PDF](/modulos/editor-evento/#relatório)** e no **[e-mail de relatório](/modulos/configuracoes/#e-mails)** enviado ao responsável), o total continua somando **pendentes e cancelados** junto com os confirmados — por isso o número desta tela pode ser **maior** que o do Painel para o mesmo evento. Não é um erro: são duas perguntas diferentes ("quantos já confirmaram" × "quantos já passaram pelo formulário, de um jeito ou de outro").
+>
+> **Quer só os confirmados de um evento específico?** Filtre a lista de **[Inscrições](/modulos/inscricoes/)** por esse evento e por status **Confirmada** — veja **[Inscrições → Filtros e busca](/modulos/inscricoes/#filtros-e-busca)**.
+
 ## Tabela de participantes
 
 A lista traz **todos os participantes** do evento, com **colunas dinâmicas** montadas a partir dos campos do formulário daquele evento (nome, CPF, e-mail e o que mais você configurou), além do status. A tabela é paginada para eventos grandes.

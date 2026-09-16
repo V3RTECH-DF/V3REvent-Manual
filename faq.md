@@ -16,6 +16,33 @@ Painel, Eventos, Inscrições, Relatórios, Check-in e Configurações. Veja
 </details>
 
 <details markdown="1">
+<summary>Qual a diferença entre "inscrição" e "inscrito"?</summary>
+
+**Inscrição** é o pedido feito por alguém — pode incluir várias pessoas de uma vez
+(uma família, uma equipe, uma delegação inteira). **Inscrito** é cada pessoa
+incluída numa inscrição. Uma única inscrição de uma escola com 30 alunos conta
+como **1 inscrição** e **30 inscritos**. O plugin usa essa distinção no Painel, em
+Inscrições, na aba Inscritos do editor de evento e em Relatórios — veja a próxima
+pergunta.
+</details>
+
+<details markdown="1">
+<summary>Qual a diferença entre "Total de inscritos" e "Total de inscrições"?</summary>
+
+**Total de inscritos** conta pessoas; **Total de inscrições** conta pedidos. Uma
+inscrição de grupo soma 1 no segundo número e várias no primeiro. No **Painel**,
+os dois números grandes contam só quem está **confirmado** — pendentes e
+cancelados aparecem na divisão por situação, logo abaixo de cada cartão, sem
+sumir. Já em **Relatórios**, no **relatório do evento em PDF** e no **e-mail de
+relatório** enviado ao responsável, o total continua somando **todas as
+situações** (confirmados, pendentes e cancelados) — por isso esse número pode ser
+maior que o do Painel para o mesmo evento. Para saber quantas
+pessoas estão confirmadas num evento específico, filtre a lista de
+**[Inscrições](/modulos/inscricoes/)** por **Confirmada**. Veja
+**[Painel](/modulos/painel/)** e **[Relatórios](/modulos/relatorios/#indicadores-do-evento)**.
+</details>
+
+<details markdown="1">
 <summary>Criei o evento, mas não encontro a página dele. Onde ela fica?</summary>
 
 A página do evento é **criada automaticamente** quando você **publica** o evento — no endereço `.../evento/nome-do-evento/`. Você **não precisa criá-la** nem colar shortcode.
