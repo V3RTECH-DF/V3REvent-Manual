@@ -18,7 +18,7 @@ A tela **Eventos** lista todos os eventos da organização e é o ponto de parti
 | **Data** | A data de início. |
 | **Local** | Onde acontece. |
 | **Status** | Rascunho, publicado etc. |
-| **Nº de inscritos** | Quantas pessoas já se inscreveram. |
+| **Inscritos** | Quantas pessoas já **confirmaram** presença, com a divisão por situação (Confirmadas, Pendentes, Canceladas) logo abaixo — mesma regra do **[Painel](/modulos/painel/)** e de **[Relatórios](/modulos/relatorios/#indicadores-do-evento)**. |
 | **ID** | O número do evento, com um botão para **copiar o shortcode de inscrição** pronto (`[v3revent_registration id="…"]`) — útil para colar o formulário em outra página. Veja **[Shortcodes e API](/modulos/shortcodes-e-api/)**. |
 | **Ações** | **Editar**, **Ver página** (abre a página pública do evento; em rascunho, **Pré-visualizar**), **Duplicar** e **Gerar relatório do evento (PDF)** — ícones com dica ao passar o mouse. |
 

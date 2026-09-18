@@ -488,8 +488,8 @@ O relatório é gerado **sob demanda** (não fica armazenado) e é um **download
 
 Todas as páginas trazem **cabeçalho** com a logo (ou nome) da sua organização e **rodapé** com o evento e a numeração ("página X de Y"). Títulos de seção e destaques seguem as **cores da sua organização** (a mesma cascata evento → organização → marca usada no formulário público). Os indicadores de **inscritos e presença** aparecem lado a lado, cada número junto do seu rótulo, com uma nota explicando o cálculo — pensados para não serem lidos errado numa leitura rápida.
 
-{: .important }
-> **"Total de inscritos" aqui soma todas as situações** (confirmados, pendentes e cancelados) — o mesmo vale para o **[e-mail de relatório](/modulos/configuracoes/#e-mails)** enviado ao responsável. É diferente do número grande do **[Painel](/modulos/painel/)**, que conta só confirmados. Veja a explicação completa em **[Relatórios → Indicadores do evento](/modulos/relatorios/#indicadores-do-evento)**.
+{: .note }
+> **"Total de inscritos" aqui conta só quem está confirmado**, igual ao **[Painel](/modulos/painel/)** e à tela **[Relatórios](/modulos/relatorios/#indicadores-do-evento)** — com a divisão por situação (confirmados, pendentes, cancelados) logo abaixo do número. As três telas de gestão dizem a mesma coisa desde a v1.94.0; antes, este PDF somava todas as situações e podia mostrar um número diferente do Painel para o mesmo evento.
 
 ### Modo de exibição da descrição
 
@@ -506,12 +506,44 @@ A **descrição do evento** — a mesma que aparece formatada na página públic
 
 ## WooCommerce
 
-Mostra o **produto vinculado** ao evento (criado automaticamente ao publicar) e o **shortcode** do formulário — ex.: `[v3revent_registration event_id="123"]` — com um botão para copiar.
+Mostra o **produto vinculado** ao evento (criado automaticamente ao publicar), a **categoria na prestação de contas** e o **shortcode** do formulário — ex.: `[v3revent_registration event_id="123"]` — com um botão para copiar.
 
 ![Aba WooCommerce do editor de evento](/assets/screenshots/evento-editor-woocommerce.png)
 
 {: .note }
 > Você não precisa editar esse produto no WooCommerce: ele é oculto do catálogo e tem o preço controlado pelas faixas do evento. Mexer nele manualmente pode causar inconsistências.
+
+### Categoria na prestação de contas
+
+É essa categoria que faz a receita do evento chegar **classificada** na prestação de contas financeira da organização — sem ela, todo o dinheiro entrado pelo V3REvent cairia misturado, e separar por evento na hora de fechar as contas viraria trabalho manual.
+
+**Sem mexer em nada**, o comportamento é o de sempre: ao publicar o evento, o plugin **cria sozinho** uma categoria com o nome do evento. Você só precisa abrir esta aba se quiser **reaproveitar** uma categoria que a loja já tem — por exemplo, para juntar vários eventos de uma mesma campanha ou série sob a mesma classificação.
+
+O campo **Categoria na prestação de contas** lista as opções em dois grupos: primeiro as **categorias de evento** já criadas por outros eventos seus, depois as **demais categorias da loja** (incluindo as que não têm nada a ver com eventos — doações, produtos, rifas). Escolher uma delas **soma** a este evento a classificação daquela categoria; não é uma troca exclusiva.
+
+Acima do seletor, a linha **Hierarquia atual** mostra onde a categoria escolhida fica dentro da árvore da loja (ex.: **Eventos › Encontro Escoteiro Regional 2026**). Quando o evento está classificado em **mais de uma** categoria, essa linha lista todas — é o sinal visual de que a escolha aqui soma, não substitui.
+
+{: .important }
+> **Escolher uma categoria não tira o evento das outras em que ele já estava.** Se o evento já tinha uma classificação (por exemplo, a automática, criada com o nome dele) e você escolhe reaproveitar outra, as duas passam a valer — a receita entra classificada nas duas ao mesmo tempo. Isso é contraintuitivo para quem espera uma troca. Confira a linha **Hierarquia atual** depois de salvar para ver exatamente o que ficou valendo.
+
+#### Criar uma categoria nova
+
+Digite o nome no campo **Nome da nova categoria** e clique em **Criar nova categoria**. Ela entra na lista acima e já fica selecionada — **não esqueça de Salvar** para aplicá-la ao produto do evento.
+
+**Se o nome for parecido com uma categoria que a loja já tem**, o V3REvent avisa **antes de criar** e mostra a candidata, com o botão **Usar esta** para reaproveitar, ou **Criar assim mesmo uma segunda categoria** se a intenção era mesmo ter duas. "Parecido" cobre diferença só de **maiúsculas, acentos ou espaços** — digitar `GEJAFEST` quando a loja já tem `GEJAFest` dispara o aviso, mesmo com a grafia diferente.
+
+![Aviso de categoria parecida com uma que a loja já tem, oferecendo reaproveitar](/assets/screenshots/evento-editor-woocommerce-categoria-duplicada.png)
+
+![Aba WooCommerce do editor de evento, aberta no celular](/assets/screenshots/evento-editor-woocommerce-mobile.png)
+
+{: .example }
+> **Exemplo:** a Escola Vitória cadastra o evento "Feira de Ciências 2026" e digita a categoria `Feira de Ciências`. A loja já tem `feira de ciências` (criada meses antes, em minúsculas, por outro evento). O aviso aparece, a coordenadora clica em **Usar esta**, e a receita dos dois eventos passa a entrar na mesma categoria — exatamente o que ela queria, sem duplicar a árvore da loja.
+
+{: .tip }
+> **Reaproveite categorias quando eventos formam uma série ou campanha.** Uma corrida anual, um festival com várias edições, um conjunto de encontros da mesma diretoria — juntar tudo numa categoria só facilita comparar arrecadação entre edições na prestação de contas. Para eventos avulsos e sem relação entre si, a categoria automática (uma por evento) já é o comportamento certo, e você não precisa tocar neste campo.
+
+{: .note }
+> **Um número entre parênteses ao lado do nome da categoria não é erro.** Ele aparece quando a loja já tinha outra categoria com o mesmo **identificador interno** (slug) e o WooCommerce precisou diferenciar as duas — é informação de bastidor, não uma falha. A categoria continua funcionando normalmente na prestação de contas.
 
 ## Equipe
 

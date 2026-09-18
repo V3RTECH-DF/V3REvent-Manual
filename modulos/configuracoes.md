@@ -32,7 +32,7 @@ Os templates da comunicação automática — sete, cada um com **assunto** e **
 
 - **Remetente** (nome e e-mail), no topo, vale para os sete;
 - **E-mail de confirmação** (participante) — enviado a cada participante ao confirmar a inscrição;
-- **E-mail de relatório** (responsável) — enviado ao responsável, com o resumo e o anexo dos inscritos;
+- **E-mail de relatório** (responsável) — enviado a quem fez **aquela inscrição**, com o resumo e o anexo em CSV **dos participantes daquele pedido**, não do evento inteiro. Não confunda com o **e-mail de andamento**, que a coordenação liga por evento e traz o resumo agregado de todas as inscrições (confirmadas, pendentes, canceladas, vagas restantes e valor arrecadado);
 - **E-mail de acesso à área do inscrito** — enviado a quem pede o link na **[Área do Inscrito](/modulos/area-do-inscrito/)**, informando o e-mail usado na inscrição;
 - **E-mail do recibo** (responsável) — enviado automaticamente a quem pagou, assim que a inscrição é confirmada, quando o recibo está ligado nas Configurações. Vai com o PDF do recibo em anexo;
 - **E-mail da credencial** (participante) — enviado ao próprio participante quando o evento oferece credencial e pede o envio automático. Vai com o PDF da credencial em anexo;

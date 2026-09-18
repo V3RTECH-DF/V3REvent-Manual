@@ -12,13 +12,22 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## "Total de inscritos" passa a dizer a mesma coisa em toda tela, e a categoria da prestação de contas fica mais esperta
+**v1.92.0 a v1.94.0 · setembro de 2026**
+
+- **"Total de inscritos" agora conta só confirmados em toda tela de gestão** — Painel, Eventos, Relatórios, o **[relatório do evento em PDF](/modulos/editor-evento/#relatório)** e o e-mail de andamento. Antes, só o Painel contava assim; as outras somavam pendentes e cancelados junto, e o mesmo evento podia mostrar dois números diferentes com o mesmo nome — a dúvida que motivou esta mudança veio de uma organizadora. Nenhum número sumiu: a divisão por situação (Confirmadas, Pendentes, Canceladas), logo abaixo do número grande, continua somando o total de sempre.
+- **Atenção: vaga ocupada continua sendo outra conta.** Quem está com pagamento **pendente** continua ocupando vaga — um evento pode mostrar poucos confirmados e já estar com a capacidade esgotada, porque há gente com pagamento em andamento segurando lugar. Isso é de propósito. Veja **[Relatórios → Indicadores do evento](/modulos/relatorios/#indicadores-do-evento)** e a pergunta correspondente no **[FAQ](/faq/)**.
+- **A [categoria na prestação de contas](/modulos/editor-evento/#categoria-na-prestação-de-contas)** (aba WooCommerce do editor de evento) agora **lista as categorias que a loja já tem**, para reaproveitar em vez de criar uma nova toda vez — antes só apareciam as categorias de evento. E **criar uma categoria com nome parecido com uma que já existe** (diferença só de maiúsculas, acentos ou espaços) passa a **avisar antes de criar**, com a opção de reaproveitar a existente.
+
+Veja **[Painel](/modulos/painel/)**, **[Eventos](/modulos/eventos/)**, **[Relatórios](/modulos/relatorios/)** e **[Editor de evento → WooCommerce](/modulos/editor-evento/#woocommerce)**.
+
 ## O Painel passa a mostrar só confirmados no número grande, com a divisão por situação logo abaixo
 **v1.91.0 · setembro de 2026**
 
 - **"Total de inscritos" e "Total de inscrições" agora contam só quem está confirmado.** Antes, os dois números somavam também pendentes e cancelados. Nenhum número some: logo abaixo de cada cartão, uma **divisão por situação** mostra Confirmados, Pendentes e Cancelados — a soma das três continua batendo com o total de sempre.
 - **O gráfico "Inscritos por mês" passou a se chamar "Inscritos confirmados por mês"**, e a lista de últimos eventos no Painel agora mostra os **inscritos confirmados** de cada um.
 - **A diferença entre "inscrição" (o pedido) e "inscrito" (cada pessoa dele) agora aparece explicada na própria tela** — no Painel, em Inscrições, na aba Inscritos do editor de evento e em Relatórios.
-- **Atenção:** em **Relatórios**, no **relatório do evento em PDF** e no **e-mail de relatório** enviado ao responsável, "Total de inscritos" **continua somando todas as situações**, incluindo pendentes e cancelados — por isso esse número pode ser maior que o do Painel para o mesmo evento. Veja **[Painel](/modulos/painel/)**, **[Inscrições](/modulos/inscricoes/)** e **[Relatórios](/modulos/relatorios/#indicadores-do-evento)**.
+- **Até a v1.93.x:** em **Relatórios**, no **relatório do evento em PDF** e no **e-mail de andamento**, "Total de inscritos" continuava somando todas as situações, incluindo pendentes e cancelados — por isso esse número podia ser maior que o do Painel para o mesmo evento. **A partir da v1.94.0, as duas telas dizem a mesma coisa** — veja a novidade mais recente, no topo desta página. Veja **[Painel](/modulos/painel/)**, **[Inscrições](/modulos/inscricoes/)** e **[Relatórios](/modulos/relatorios/#indicadores-do-evento)**.
 
 {: .tip }
 > **Quer saber quantas pessoas estão confirmadas num evento específico?** Filtre a lista de **[Inscrições](/modulos/inscricoes/)** por **Confirmada**.

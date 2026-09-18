@@ -15,12 +15,20 @@ A tela **Relatórios** aprofunda um evento: indicadores, a lista completa de par
 
 ## Indicadores do evento
 
-Ao selecionar um evento, você vê os números dele: **inscritos**, **pagos**, **aguardando** e **receita**. A receita já considera as trocas de modalidade — devoluções descontadas, diferenças pagas somadas (veja **[Painel → O que entra na Receita total](/modulos/painel/)**).
+Ao selecionar um evento, você vê os números dele: **total de inscritos**, **total de inscrições** e **receita**. Igual ao **[Painel](/modulos/painel/)**, o número grande de cada cartão conta só quem está **confirmado**, com a divisão por situação (**Confirmadas**, **Pendentes**, **Canceladas**) logo abaixo. A receita já considera as trocas de modalidade — devoluções descontadas, diferenças pagas somadas (veja **[Painel → O que entra na Receita total](/modulos/painel/)**).
+
+{: .note }
+> **Desde a v1.94.0, "Total de inscritos" diz a mesma coisa em toda tela de gestão** — Painel, Relatórios, o **[Relatório do evento em PDF](/modulos/editor-evento/#relatório)** e o e-mail de andamento das inscrições. Antes, só o Painel contava assim; as outras telas somavam pendentes e cancelados junto, e o mesmo evento podia mostrar dois números diferentes com o mesmo nome. Nenhum número sumiu: a soma da divisão por situação é o total de antes.
 
 {: .important }
-> **Aqui, "Total de inscritos" soma todas as situações — diferente do Painel.** No **[Painel](/modulos/painel/)**, o número grande de "Total de inscritos" conta só quem está **confirmado**. Aqui em Relatórios (e também no **[Relatório do evento em PDF](/modulos/editor-evento/#relatório)** e no **[e-mail de relatório](/modulos/configuracoes/#e-mails)** enviado ao responsável), o total continua somando **pendentes e cancelados** junto com os confirmados — por isso o número desta tela pode ser **maior** que o do Painel para o mesmo evento. Não é um erro: são duas perguntas diferentes ("quantos já confirmaram" × "quantos já passaram pelo formulário, de um jeito ou de outro").
+> **"Total de inscritos" confirmados não é o mesmo que "vagas ocupadas".** A capacidade do evento continua contando **toda** inscrição, inclusive a **pendente de pagamento** — é assim de propósito, para não liberar o lugar de quem já iniciou o pagamento. Um evento com capacidade para 50 pode mostrar "Total de inscritos: 40" (confirmados) e já estar com as vagas esgotadas, porque há 10 pedidos pendentes segurando lugar. Veja **[Durante as inscrições → Entenda os status de uma inscrição](/guia-do-gestor/durante-as-inscricoes/#entenda-os-status-de-uma-inscrição)**.
 >
 > **Quer só os confirmados de um evento específico?** Filtre a lista de **[Inscrições](/modulos/inscricoes/)** por esse evento e por status **Confirmada** — veja **[Inscrições → Filtros e busca](/modulos/inscricoes/#filtros-e-busca)**.
+
+Duas telas continuam contando "total de inscritos" de um jeito diferente, também de propósito:
+
+- a **lista de participantes que você exporta** conta as **linhas do arquivo** — ou seja, todas as pessoas, de qualquer situação;
+- o **e-mail de relatório** enviado ao responsável de uma inscrição conta só as **pessoas daquele pedido**, não do evento inteiro (veja **[Configurações → E-mails](/modulos/configuracoes/#e-mails)**).
 
 ## Tabela de participantes
 

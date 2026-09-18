@@ -30,16 +30,32 @@ pergunta.
 <summary>Qual a diferença entre "Total de inscritos" e "Total de inscrições"?</summary>
 
 **Total de inscritos** conta pessoas; **Total de inscrições** conta pedidos. Uma
-inscrição de grupo soma 1 no segundo número e várias no primeiro. No **Painel**,
-os dois números grandes contam só quem está **confirmado** — pendentes e
-cancelados aparecem na divisão por situação, logo abaixo de cada cartão, sem
-sumir. Já em **Relatórios**, no **relatório do evento em PDF** e no **e-mail de
-relatório** enviado ao responsável, o total continua somando **todas as
-situações** (confirmados, pendentes e cancelados) — por isso esse número pode ser
-maior que o do Painel para o mesmo evento. Para saber quantas
-pessoas estão confirmadas num evento específico, filtre a lista de
+inscrição de grupo soma 1 no segundo número e várias no primeiro. Desde a
+v1.94.0, os dois números grandes contam só quem está **confirmado** em **toda**
+tela de gestão — Painel, Eventos, Relatórios, o relatório do evento em PDF e o
+e-mail de andamento — com a divisão por situação (Confirmadas, Pendentes,
+Canceladas) logo abaixo de cada cartão, sem nenhum número sumir. Para saber
+quantas pessoas estão confirmadas num evento específico, filtre a lista de
 **[Inscrições](/modulos/inscricoes/)** por **Confirmada**. Veja
 **[Painel](/modulos/painel/)** e **[Relatórios](/modulos/relatorios/#indicadores-do-evento)**.
+
+Duas telas contam diferente, de propósito: a **lista de participantes exportada**
+conta todas as linhas do arquivo (qualquer situação), e o **e-mail de relatório**
+enviado ao responsável de uma inscrição conta só as pessoas **daquele pedido**,
+não do evento inteiro.
+</details>
+
+<details markdown="1">
+<summary>Meu evento mostra poucos inscritos confirmados, mas as vagas já esgotaram. Por quê?</summary>
+
+Porque **vaga ocupada** e **inscrito confirmado** são duas contagens diferentes,
+de propósito. O "Total de inscritos" conta só quem já **pagou**; a capacidade do
+evento conta **toda** inscrição, inclusive a que está **pendente de pagamento** —
+para não liberar o lugar de alguém que já iniciou o processo. Um evento para 50
+pessoas pode mostrar "Total de inscritos: 40" e já estar lotado, porque há 10
+pedidos pendentes segurando vaga. Revise os pendentes antigos periodicamente: se
+muitos forem carrinho abandonado, a capacidade parece mais cheia do que está de
+fato. Veja **[Durante as inscrições](/guia-do-gestor/durante-as-inscricoes/)**.
 </details>
 
 <details markdown="1">
